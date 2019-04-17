@@ -2,14 +2,17 @@ div[class^="col-"] {
   padding: 0;
 }
 
+@import url(//db.onlinewebfonts.com/c/cfdc7772d1426068d6cc35816bdb06f8?family=Visby+CF+Bold);
 @font-face {
-  font-family: "Visby CF Heavy";
-  src: url("8af4648faad736e5dafed2c6c9775bb3.eot"), /* IE9*/ url("8af4648faad736e5dafed2c6c9775bb3.woff") format("woff"),
-    /* chrome、firefox */ url("8af4648faad736e5dafed2c6c9775bb3.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  font-family: "Visby CF Bold";
+  src: url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.eot");
+  src: url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.ttf") format("truetype");
 }
 
 * {
-  font-family: "Visby CF Heavy";
+  font-family: "Visby CF Bold";
   a {
     color: $text_color;
     &:hover {

@@ -1,16 +1,16 @@
-@charset "UTF-8";
+@import url(//db.onlinewebfonts.com/c/cfdc7772d1426068d6cc35816bdb06f8?family=Visby+CF+Bold);
 div[class^="col-"] {
   padding: 0;
 }
 
 @font-face {
-  font-family: "Visby CF Heavy";
-  src: url("8af4648faad736e5dafed2c6c9775bb3.eot"), url("8af4648faad736e5dafed2c6c9775bb3.woff") format("woff"), url("8af4648faad736e5dafed2c6c9775bb3.ttf") format("truetype");
-  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  font-family: "Visby CF Bold";
+  src: url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.eot");
+  src: url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.woff") format("woff"), url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.ttf") format("truetype");
 }
 
 * {
-  font-family: "Visby CF Heavy";
+  font-family: "Visby CF Bold";
 }
 
 * a {
@@ -89,7 +89,59 @@ div[class^="col-"] {
 }
 
 main .weekly-pagination {
+  position: relative;
   background-color: #00a2ff;
   height: 70px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+main .weekly-pagination .page-item {
+  color: #ffffff70;
+  padding: 22px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main .weekly-pagination .page-item:hover {
+  color: #fff;
+}
+
+main .weekly-pagination .page-item i {
+  width: 14px;
+  height: 9.3px;
+}
+
+main .weekly-pagination .this-week {
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+main .weekly-pagination .btn-this-week {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 100px;
+  height: 30px;
+  border: 1.5px solid #fff;
+  border-radius: 5px;
+  background-color: #00a2ff;
+  color: #fff;
+  font-size: 14px;
+}
+
+main .weekly-pagination .btn-this-week:hover {
+  background-color: #1aabff;
 }
 /*# sourceMappingURL=style.css.map */

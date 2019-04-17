@@ -1,0 +1,46 @@
+main {
+  .weekly-pagination {
+    position: relative;
+    background-color: $main_color;
+    height: 70px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    .page-item {
+      color: #ffffff70;
+      padding: 22px;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #fff;
+      }
+      i {
+        width: 14px;
+        height: 9.3px;
+      }
+    }
+    .this-week {
+      font-size: 24px;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 0;
+    }
+    .btn-this-week {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      width: 100px;
+      height: 30px;
+      border: 1.5px solid #fff;
+      border-radius: 5px;
+      background-color: $main_color;
+      color: #fff;
+      font-size: 14px;
+      &:hover {
+        background-color: lighten($color: $main_color, $amount: 5%);
+      }
+    }
+  }
+}
