@@ -1,0 +1,9 @@
+.sides{
+    display: flex;
+    height: 884px;
+
+    .timetable{
+        background-color: $bg_color;
+        width: 1120px;
+    }
+}

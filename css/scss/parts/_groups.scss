@@ -1,0 +1,32 @@
+.sides {
+  .groups {
+
+    width: 320px;
+    .btn-list {
+      display: flex;
+      .group-btn {
+        width: 160px;
+        height: 35px;
+        border: none;
+        border-bottom: 0.5px solid $bg_color;
+        background-color: #fff;
+        color: #b2b2b2;
+        font-size: 12px;
+        font-weight: 500;
+        &:focus{
+            box-shadow: none;
+            outline: none;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+      }
+      .active {
+        border-bottom: 2.5px solid $main_color;
+        font-size: 12px;
+        font-weight: 900;
+        color: $text_color;
+      }
+    }
+  }
+}
