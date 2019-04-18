@@ -1,6 +1,5 @@
 .sides {
   .groups {
-
     width: 320px;
     .btn-list {
       display: flex;
@@ -13,12 +12,12 @@
         color: #b2b2b2;
         font-size: 12px;
         font-weight: 500;
-        &:focus{
-            box-shadow: none;
-            outline: none;
+        &:focus {
+          box-shadow: none;
+          outline: none;
         }
-        &:hover{
-            cursor: pointer;
+        &:hover {
+          cursor: pointer;
         }
       }
       .active {
@@ -28,5 +27,51 @@
         color: $text_color;
       }
     }
+    .groups-list {
+      .groups-item {
+        overflow: hidden;
+
+        position: relative;
+        margin-left: 20px;
+        width: 280px;
+        height: 90px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.08);
+        .group {
+          border-bottom: 2px solid $bg_color;
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          .start-btn {
+            width: 108px;
+            height: 30px;
+            font-size: 12px;
+            color: #fff;
+            background-color: $main_color;
+            border: none;
+            border-radius: 5px;
+          }
+        }
+        
+        .info-btn {
+          position: absolute;
+          border: none;
+          width: 280px;
+          height: 19px;
+          background-color: #fff;
+          color: #cacaca;
+          line-height: 19px;
+          &:focus{
+            outline: none;
+          }
+
+        }
+      }
+    }
   }
+}
+.group-info{
+  height: 50px;
+  width: 50px;
+  background-color: red;
 }

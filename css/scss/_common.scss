@@ -1,7 +1,7 @@
 div[class^="col-"] {
   padding: 0;
 }
-
+@import url("font-awesome/css/fontawesome-all.min.css");
 @import url(//db.onlinewebfonts.com/c/cfdc7772d1426068d6cc35816bdb06f8?family=Visby+CF+Bold);
 @font-face {
   font-family: "Visby CF Bold";
@@ -19,4 +19,8 @@ div[class^="col-"] {
       color: $text_color;
     }
   }
+}
+ul{
+  list-style-type: none;
+display: inline;
 }

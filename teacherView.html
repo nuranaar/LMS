@@ -10,7 +10,9 @@
         type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -54,7 +56,22 @@
                     <button class="group-btn active">Aktiv dərslər</button>
                     <button class="group-btn">Bitmiş dərslər</button>
                 </div>
-                
+                <ul id="active-groups-list" class="groups-list">
+                    <li class="groups-item">
+                        <div class="group">
+                            <h4 class="m-0">P107</h4>
+                            <button class="start-btn">
+                                Dərsi başlat
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <button class="info-btn">
+                            <i class="fas fa-angle-down"></i>
+                        </button>
+                    </li>
+
+                </ul>
+                <ul id="closed-groups-list" class="groups-list"></ul>
             </div>
             <div class="timetable">
 

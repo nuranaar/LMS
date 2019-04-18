@@ -6,4 +6,7 @@ $(document).ready(function () {
             $(this).addClass("active");
         }
     });
+    $(".info-btn").click(function (e) { 
+        e.preventDefault();
+    });
 });
