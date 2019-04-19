@@ -28,9 +28,9 @@
       }
     }
     .groups-list {
+
       .groups-item {
         overflow: hidden;
-
         position: relative;
         margin-left: 20px;
         width: 280px;
@@ -52,7 +52,7 @@
             border-radius: 5px;
           }
         }
-        
+
         .info-btn {
           position: absolute;
           border: none;
@@ -61,17 +61,17 @@
           background-color: #fff;
           color: #cacaca;
           line-height: 19px;
-          &:focus{
+          &:focus {
             outline: none;
           }
-
         }
       }
     }
   }
 }
-.group-info{
-  height: 50px;
-  width: 50px;
+.group-info {
+  display: none;
+  padding: 10px;
   background-color: red;
+
 }

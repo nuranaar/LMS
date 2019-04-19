@@ -236,8 +236,8 @@ main .weekly-pagination .btn-this-week:hover {
 }
 
 .group-info {
-  height: 50px;
-  width: 50px;
+  display: none;
+  padding: 10px;
   background-color: red;
 }
 

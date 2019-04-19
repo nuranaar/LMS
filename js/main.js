@@ -6,7 +6,15 @@ $(document).ready(function () {
             $(this).addClass("active");
         }
     });
-    $(".info-btn").click(function (e) { 
+    $(".info-btn").click(function (e) {
         e.preventDefault();
+       if($(this).prev().css("display")=="none"){
+            $(this).prev().slideDown("slow");
+        $(this).parent(".groups-item").css({"height": "218px"});
+        }
+        else{
+            $(this).prev().slideUp("slow");
+            $(this).parent(".groups-item").css({"height": "90px"}); 
+        }
     });
 });
