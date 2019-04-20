@@ -1,20 +1,58 @@
-$(document).ready(function () {
-    $(".group-btn").click(function (e) {
-        e.preventDefault();
-        if ($(this).hasClass("active") == false) {
-            $(this).siblings(".active").removeClass("active");
-            $(this).addClass("active");
+$(document).ready(() => {
+    // active/closed groups
+    $(".group-btn").click((e) => {
+        let btn = $(e.currentTarget);
+        if (btn.hasClass("active") == false) {
+
+            btn.addClass("active");
+            $(btn.data('target')).addClass("active-list");
+            $(btn.siblings(".active").data('target')).removeClass("active-list");
+            btn.siblings(".active").removeClass("active");
         }
     });
-    $(".info-btn").click(function (e) {
-        e.preventDefault();
-       if($(this).prev().css("display")=="none"){
-            $(this).prev().slideDown("slow");
-        $(this).parent(".groups-item").css({"height": "218px"});
+
+    // groups infarmation
+    $(".info-btn").click((e) => {
+        let btn = $(e.currentTarget);
+        if (btn.prev().css("display") == "none") {
+            btn.prev().slideDown("fast");
+            btn.css({
+                "transform": "rotate(180deg)"
+            });
+            btn.parent(".groups-item").css({
+                "height": "222px"
+            });
         }
-        else{
-            $(this).prev().slideUp("slow");
-            $(this).parent(".groups-item").css({"height": "90px"}); 
+        else {
+            btn.parent(".groups-item").css({
+                "height": "90px",
+            });
+            btn.prev().slideUp();
+            btn.css({
+                "transform": "rotate(0deg)"
+            });
+
+        }
+    });
+
+    // open/close lesson
+    $(".start-btn").click((e) => {
+        let btn = $(e.currentTarget);
+        if (btn.hasClass("open") == false) {
+            btn.addClass("open");
+            btn.html('Dərsi bitir   <i class="fas fa-times"></i>');
+
+            setTimeout(() => {
+                btn.removeClass("open");
+                btn.html('Dərsi başlat   <i class="fas fa-arrow-right"></i>');
+                btn.css({ "display": "block" });
+            }, 10000);
+        }
+        else {
+            btn.removeClass("open");
+            btn.html('Dərsi başlat   <i class="fas fa-arrow-right"></i>');
+            btn.css({ "display": "none" });
+
         }
     });
 });

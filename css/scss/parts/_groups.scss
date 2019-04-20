@@ -12,13 +12,6 @@
         color: #b2b2b2;
         font-size: 12px;
         font-weight: 500;
-        &:focus {
-          box-shadow: none;
-          outline: none;
-        }
-        &:hover {
-          cursor: pointer;
-        }
       }
       .active {
         border-bottom: 2.5px solid $main_color;
@@ -28,8 +21,13 @@
       }
     }
     .groups-list {
-
+      display: none;
+      &.active-list {
+        display: block;
+      }
       .groups-item {
+        margin-top: 20px;
+        transition: all 0.1s;
         overflow: hidden;
         position: relative;
         margin-left: 20px;
@@ -38,7 +36,7 @@
         border-radius: 5px;
         box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.08);
         .group {
-          border-bottom: 2px solid $bg_color;
+          border-bottom: 1px solid $bg_color;
           padding: 20px;
           display: flex;
           justify-content: space-between;
@@ -50,9 +48,36 @@
             background-color: $main_color;
             border: none;
             border-radius: 5px;
+            &:hover {
+              background-color: lighten($color: $main_color, $amount: 8%);
+            }
+            &.open {
+              border: 1px solid #eb3f3f;
+              color: #eb3f3f;
+              background: #fff;
+            }
           }
         }
-
+        .group-info {
+          display: none;
+          color: $span_color;
+          .info-list {
+            .info-item {
+              padding: 10px 0 0 20px;
+              width: 100%;
+              p {
+                color: $info_color;
+                line-height: 13px;
+                font-size: 12px;
+                span {
+                  color: $span_color;
+                  font-weight: 700;
+                  line-height: 15px;
+                }
+              }
+            }
+          }
+        }
         .info-btn {
           position: absolute;
           border: none;
@@ -61,17 +86,14 @@
           background-color: #fff;
           color: #cacaca;
           line-height: 19px;
-          &:focus {
-            outline: none;
-          }
+          bottom: 0;
         }
       }
     }
   }
 }
-.group-info {
-  display: none;
-  padding: 10px;
-  background-color: red;
 
+#closed-groups-list .groups-item,
+#closed-groups-list .info-btn {
+  background-color: #f9f9f9;
 }

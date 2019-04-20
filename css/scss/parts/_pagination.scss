@@ -39,7 +39,7 @@ main {
       color: #fff;
       font-size: 14px;
       &:hover {
-        background-color: lighten($color: $main_color, $amount: 5%);
+        background-color: lighten($color: $main_color, $amount: 8%);
       }
     }
   }
