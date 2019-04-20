@@ -25,7 +25,7 @@ $(document).ready(() => {
         }
         else {
             btn.parent(".groups-item").css({
-                "height": "90px",
+                "height": "90px"
             });
             btn.prev().slideUp();
             btn.css({
@@ -55,4 +55,16 @@ $(document).ready(() => {
 
         }
     });
+
+    $('.toggle').minitoggle({
+        on: true
+    });
+
+    $('.toggle').on("toggle", function (e) {
+        if (e.isActive) {
+        }
+        else {
+        }
+    });
+
 });

@@ -1,9 +1,15 @@
-.sides{
-    display: flex;
-    height: 884px;
+.sides {
+  display: flex;
 
+  .table-side {
+    background-color: $bg_color;
+    width: 100%;
     .timetable{
-        background-color: $bg_color;
-        width: 1120px;
+        margin: 20px;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
     }
+  }
 }

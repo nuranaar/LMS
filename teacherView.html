@@ -10,7 +10,7 @@
         type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-
+    <link rel="stylesheet" href="css/minitoggle.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -163,19 +163,15 @@
 
 
                         </div>
-
-
                         <button class="info-btn">
                             <i class="fas fa-angle-down"></i>
                         </button>
-
                     </li>
                 </ul>
                 <ul id="closed-groups-list" class="groups-list">
                     <li class="groups-item">
                         <div class="group">
                             <h4 class="m-0">P307</h4>
-
                         </div>
                         <div class="group-info">
                             <ul class="info-list">
@@ -224,16 +220,29 @@
 
                     </li>
                 </ul>
-            </div>
-            <div class="timetable">
+
+                <div class="attendance">
+                    <h5>Smart Attendance</h5>
+                    <div class="toggle">
+                        <div class="minitoggle active">
+                            <div class="toggle-handle"></div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
+            <div class="table-side">
+                <div class="timetable">
+                </div>
+            </div>
+
         </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="js/minitoggle.js"></script>
     <script src="js/main.js"></script>
 </body>
 
