@@ -1,16 +1,35 @@
 
 @import url("font-awesome/css/fontawesome-all.min.css");
-@import url(//db.onlinewebfonts.com/c/cfdc7772d1426068d6cc35816bdb06f8?family=Visby+CF+Bold);
 @font-face {
-  font-family: "Visby CF Bold";
-  src: url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.eot");
-  src: url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.ttf") format("truetype");
+  font-family: "VisbyCF";
+  src: url("../fonts/VisbyCF-Bold.otf") format("opentype"),
+    url("../fonts/VisbyCF-Bold-az.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+  font-family: "VisbyCF";
+  src: url("../fonts/VisbyCF-Heavy.otf") format("opentype"),
+    url("../fonts/VisbyCF-Heavy-az.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+  font-family: "VisbyCF";
+  src: url("../fonts/VisbyCF-Medium.otf") format("opentype"),
+    url("../fonts/VisbyCF-Medium-az.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+  font-family: "VisbyCF";
+  src: url("../fonts/VisbyCF-DemiBold-az.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
 }
 
 * {
-  font-family: "Visby CF Bold";
+  font-family: "VisbyCF";
   a {
     color: $text_color;
     &:hover {

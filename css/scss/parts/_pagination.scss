@@ -38,6 +38,7 @@ main {
       background-color: $main_color;
       color: #fff;
       font-size: 14px;
+      font-weight: bold;
       &:hover {
         background-color: lighten($color: $main_color, $amount: 8%);
       }

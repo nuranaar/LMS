@@ -1,13 +1,34 @@
 @import url("font-awesome/css/fontawesome-all.min.css");
-@import url(//db.onlinewebfonts.com/c/cfdc7772d1426068d6cc35816bdb06f8?family=Visby+CF+Bold);
 @font-face {
-  font-family: "Visby CF Bold";
-  src: url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.eot");
-  src: url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.woff") format("woff"), url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.ttf") format("truetype");
+  font-family: "VisbyCF";
+  src: url("../fonts/VisbyCF-Bold.otf") format("opentype"), url("../fonts/VisbyCF-Bold-az.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VisbyCF";
+  src: url("../fonts/VisbyCF-Heavy.otf") format("opentype"), url("../fonts/VisbyCF-Heavy-az.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VisbyCF";
+  src: url("../fonts/VisbyCF-Medium.otf") format("opentype"), url("../fonts/VisbyCF-Medium-az.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VisbyCF";
+  src: url("../fonts/VisbyCF-DemiBold-az.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 
 * {
-  font-family: "Visby CF Bold";
+  font-family: "VisbyCF";
 }
 
 * a {
@@ -156,6 +177,7 @@ main .weekly-pagination .btn-this-week {
   background-color: #00a2ff;
   color: #fff;
   font-size: 14px;
+  font-weight: bold;
 }
 
 main .weekly-pagination .btn-this-week:hover {
@@ -224,7 +246,13 @@ main .weekly-pagination .btn-this-week:hover {
           justify-content: space-between;
 }
 
+.sides .groups .groups-list .groups-item .group h4 {
+  font-weight: 900;
+  color: #303030;
+}
+
 .sides .groups .groups-list .groups-item .group .start-btn {
+  font-weight: 600;
   width: 108px;
   height: 28px;
   font-size: 12px;
@@ -246,7 +274,11 @@ main .weekly-pagination .btn-this-week:hover {
 
 .sides .groups .groups-list .groups-item .group-info {
   display: none;
-  color: #808080;
+  color: #303030;
+}
+
+.sides .groups .groups-list .groups-item .group-info h5 {
+  font-weight: 900;
 }
 
 .sides .groups .groups-list .groups-item .group-info .info-list .info-item {
@@ -255,14 +287,14 @@ main .weekly-pagination .btn-this-week:hover {
 }
 
 .sides .groups .groups-list .groups-item .group-info .info-list .info-item p {
-  color: #80808085;
+  color: #808080;
+  font-weight: 500;
   line-height: 13px;
   font-size: 12px;
 }
 
 .sides .groups .groups-list .groups-item .group-info .info-list .info-item p span {
-  color: #808080;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 15px;
 }
 
@@ -289,6 +321,7 @@ main .weekly-pagination .btn-this-week:hover {
   position: absolute;
   bottom: 0;
   border-top: solid 1px #f2f2f2;
+  font-weight: 500;
 }
 
 #closed-groups-list .groups-item,

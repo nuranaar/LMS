@@ -41,7 +41,12 @@
           padding: 20px;
           display: flex;
           justify-content: space-between;
+          h4 {
+            font-weight: 900;
+            color: $text_color;
+          }
           .start-btn {
+            font-weight: 600;
             width: 108px;
             height: 28px;
             font-size: 12px;
@@ -61,18 +66,21 @@
         }
         .group-info {
           display: none;
-          color: $span_color;
+          color: $text_color;
+          h5 {
+            font-weight: 900;
+          }
           .info-list {
             .info-item {
               padding: 10px 0 0 20px;
               width: 100%;
               p {
-                color: $info_color;
+                color: $span_color;
+                font-weight: 500;
                 line-height: 13px;
                 font-size: 12px;
                 span {
-                  color: $span_color;
-                  font-weight: 700;
+                  font-weight: 900;
                   line-height: 15px;
                 }
               }
@@ -92,7 +100,7 @@
       }
     }
   }
-  .attendance{
+  .attendance {
     width: 100%;
     padding: 20px 40px;
     display: flex;
@@ -100,6 +108,7 @@
     position: absolute;
     bottom: 0;
     border-top: solid 1px $bg_color;
+    font-weight: 500;
   }
 }
 

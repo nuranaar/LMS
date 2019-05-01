@@ -38,24 +38,21 @@ $(document).ready(() => {
     // open/close lesson
     $(".start-btn").click((e) => {
         let btn = $(e.currentTarget);
+
         if (btn.hasClass("open") == false) {
             btn.addClass("open");
             btn.html('Dərsi bitir   <i class="fas fa-times"></i>');
-
-            setTimeout(() => {
-                btn.removeClass("open");
-                btn.html('Dərsi başlat   <i class="fas fa-arrow-right"></i>');
-                btn.css({ "display": "block" });
-            }, 10000);
-        }
+       }
         else {
             btn.removeClass("open");
             btn.html('Dərsi başlat   <i class="fas fa-arrow-right"></i>');
             btn.css({ "display": "none" });
-
         }
+        btn.data()
     });
 
+
+    //smart attendance
     $('.toggle').minitoggle({
         on: true
     });
