@@ -7,6 +7,10 @@
     .timetable{
         margin: 20px;
         height: 100vh;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+          width: 0 !important;
+        }
         background-color: #fff;
         box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.06);
         border-radius: 5px;

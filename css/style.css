@@ -27,6 +27,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "VisbyCF";
+  src: url("../../fonts/VisbyCF-ExtraBold-az.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
 * {
   font-family: "VisbyCF";
 }
@@ -260,6 +267,19 @@ main .weekly-pagination .btn-this-week:hover {
   background-color: #00a2ff;
   border: none;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sides .groups .groups-list .groups-item .group .start-btn i {
+  font-size: 11px;
 }
 
 .sides .groups .groups-list .groups-item .group .start-btn:hover {
@@ -270,6 +290,7 @@ main .weekly-pagination .btn-this-week:hover {
   border: 1px solid #eb3f3f;
   color: #eb3f3f;
   background: #fff;
+  padding: 0 13px;
 }
 
 .sides .groups .groups-list .groups-item .group-info {
@@ -343,9 +364,47 @@ main .weekly-pagination .btn-this-week:hover {
 .sides .table-side .timetable {
   margin: 20px;
   height: 100vh;
+  overflow-y: auto;
   background-color: #fff;
   -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.06);
           box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
+}
+
+.sides .table-side .timetable::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr {
+  text-align: center;
+  background-color: #e0e0e0;
+}
+
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr th {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td, .Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr th {
+  color: #505050;
+  padding: 10px;
+  border-left: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  width: 202px;
+}
+
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td:first-child, .Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr th:first-child {
+  width: 270px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4, .Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr th.ParticipationTable__Current__1bTw4 {
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

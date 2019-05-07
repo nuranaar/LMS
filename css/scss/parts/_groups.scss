@@ -54,6 +54,12 @@
             background-color: $main_color;
             border: none;
             border-radius: 5px;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-evenly;
+            i{
+              font-size: 11px;
+            }
             &:hover {
               background-color: lighten($color: $main_color, $amount: 8%);
             }
@@ -61,6 +67,7 @@
               border: 1px solid #eb3f3f;
               color: #eb3f3f;
               background: #fff;
+              padding: 0 13px;
             }
           }
         }

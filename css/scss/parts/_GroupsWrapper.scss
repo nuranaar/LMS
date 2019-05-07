@@ -1,0 +1,36 @@
+.Teacher__GroupsWrapper__3ToYy {
+  .ParticipationTable__ParticipationTable__NzBVH {
+    table {
+      tr {
+        text-align: center;
+        background-color: #e0e0e0;
+        th{
+            font-weight: 800;
+            font-size: 20px;
+        }
+        td{
+            font-size:16px;
+            font-weight: 600;
+        }
+        td, th {
+            color: #505050;
+            padding: 10px;
+          border-left: 2px solid $bg_color;
+          border-bottom: 2px solid $bg_color;
+          width: 202px;
+
+          &:first-child {
+            width: 270px;
+            background-color: #fff;
+            text-align: left;
+          }
+          &.ParticipationTable__Current__1bTw4 {
+            background-color: #fff;
+
+          }
+        }
+      
+      }
+    }
+  }
+}
