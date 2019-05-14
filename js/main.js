@@ -51,7 +51,6 @@ $(document).ready(() => {
         btn.data()
     });
 
-
     //smart attendance
     $('.toggle').minitoggle({
         on: true
@@ -64,4 +63,13 @@ $(document).ready(() => {
         }
     });
 
+    $('.open-noti').click((e)=>{
+        let btn=$(e.currentTarget);
+        $(`${btn.attr("href")}`).css("display","block");
+    });
+    $(".noti-area").click((e)=>{
+        let area=$(e.currentTarget);
+        console.log("click");
+        area.parent().css("display","none");
+    });
 });

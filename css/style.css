@@ -44,6 +44,7 @@
 
 * a:hover {
   color: #303030;
+  text-decoration: none;
 }
 
 ul {
@@ -131,6 +132,88 @@ button:focus {
   width: 36px;
   height: 36px;
   border-radius: 100%;
+}
+
+#noti {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+#noti .noti-area {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+#noti .noti-box {
+  width: 350px;
+  height: 288px;
+  border-radius: 5px;
+  position: absolute;
+  top: 70px;
+  right: 118px;
+  z-index: 10;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  overflow-y: hidden;
+}
+
+#noti .noti-box .list .list-item {
+  border-bottom: 2px solid #f2f2f2;
+  width: 326px;
+  font-size: 14px;
+  padding: 0 5px;
+  line-height: 43px;
+}
+
+#noti .noti-box .list .list-item.unread {
+  font-weight: 900;
+  position: relative;
+}
+
+#noti .noti-box .list .list-item.unread::after {
+  content: "";
+  border-radius: 100%;
+  width: 6px;
+  height: 6px;
+  background-color: #00a2ff;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+}
+
+#noti .noti-box .list .list-item.read {
+  font-weight: 500;
+}
+
+#noti .noti-box .list .list-item p {
+  width: 292px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+#noti .noti-box .noti-btn {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 900;
+  color: #00a2ff;
+  border: none;
+  background-color: #fff;
+  line-height: 43px;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
 }
 
 main .weekly-pagination {
@@ -390,7 +473,8 @@ main .weekly-pagination .btn-this-week:hover {
   font-weight: 600;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td, .Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr th {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td,
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr th {
   color: #505050;
   padding: 10px;
   border-left: 2px solid #f2f2f2;
@@ -398,13 +482,38 @@ main .weekly-pagination .btn-this-week:hover {
   width: 202px;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td:first-child, .Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr th:first-child {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td:first-child,
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr th:first-child {
   width: 270px;
   background-color: #fff;
   text-align: left;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4, .Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr th.ParticipationTable__Current__1bTw4 {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4,
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr th.ParticipationTable__Current__1bTw4 {
   background-color: #fff;
+}
+
+.AttendenceCell[disabled].Present {
+  background-color: #e0e0e0;
+  color: #a0a0a0;
+}
+
+.Present {
+  background-color: #fff;
+  color: #00d743 !important;
+}
+
+.Present span {
+  font-weight: 800;
+}
+
+.Absent {
+  background-color: #fff3f3 !important;
+  color: #eb3f3f !important;
+}
+
+.Absent span {
+  font-weight: 800;
 }
 /*# sourceMappingURL=style.css.map */
