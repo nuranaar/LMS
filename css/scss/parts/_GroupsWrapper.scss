@@ -28,6 +28,32 @@
           &.ParticipationTable__Current__1bTw4 {
             background-color: #fff;
           }
+          .ParticipationOptions__reason-dropdown__1cjUh {
+            width: 88px;
+            border-radius: 5px;
+            margin-left: auto;
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            .ParticipationOptions__reasons__1sOF_ {
+              .ParticipationOptions__reason__1PQFi {
+               
+                  cursor: pointer;
+                
+                &:first-child {
+                  width: 70px;
+                  margin: auto;
+                  border-bottom: solid 2px $bg_color;
+                  cursor: default;
+                }
+                font-size: 12px;
+                font-weight: 800;
+
+                .fa-tag{
+                  margin-left: 6px !important;
+                }
+              }
+            }
+          }
         }
       }
     }

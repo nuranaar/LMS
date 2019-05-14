@@ -42,7 +42,7 @@ $(document).ready(() => {
         if (btn.hasClass("open") == false) {
             btn.addClass("open");
             btn.html('Dərsi bitir   <i class="fas fa-times"></i>');
-       }
+        }
         else {
             btn.removeClass("open");
             btn.html('Dərsi başlat   <i class="fas fa-arrow-right"></i>');
@@ -63,13 +63,38 @@ $(document).ready(() => {
         }
     });
 
-    $('.open-noti').click((e)=>{
-        let btn=$(e.currentTarget);
-        $(`${btn.attr("href")}`).css("display","block");
+    $('.open-noti').click((e) => {
+        let btn = $(e.currentTarget);
+        $(`${btn.attr("href")}`).css("display", "block");
     });
-    $(".noti-area").click((e)=>{
-        let area=$(e.currentTarget);
-        console.log("click");
-        area.parent().css("display","none");
+    $(".noti-area").click((e) => {
+        let area = $(e.currentTarget);
+        area.parent().css("display", "none");
+        $(".noti-box").css({
+            "height":"245px",
+            "overflow-y":"hidden"
+        });
+        $(".noti-btn").css("display", "block");
+    });
+
+    $(".noti-btn").click((e) => {
+        let btn = $(e.currentTarget);
+        btn.css("display", "none");
+        $(".noti-box").css({
+            "height":"350px",
+            "overflow-y":"auto"
+        });
+    });
+
+    $(".add-label").click((e)=>{
+        $($(e.currentTarget).data("target")).css("display", "block");
+    });
+    $(".popup-area").click((e) => {
+        $(e.currentTarget)
+        $("#other-label").css("display", "none");
+    });
+    $(".close").click((e) => {
+        $(e.currentTarget)
+        $("#other-label").css("display", "none");
     });
 });

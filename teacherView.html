@@ -251,8 +251,10 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Fərid Kərimov</td>
-                                        <td class="ParticipationTable__Current__1bTw4n Present">
+                                        <td>Fərid Kərimov
+                                            
+                                        </td>
+                                        <td class="ParticipationTable__Current__1bTw4">
                                             <div row="0" col="0"
                                                 class="AttendenceCell__AttendenceCell__1mglq AttendenceCell__Present__1TcIu">
                                                 <svg aria-hidden="true" focusable="false" data-prefix="fas"
@@ -263,8 +265,7 @@
                                                     </path>
                                                 </svg>
                                                 <div class="ParticipationOptions__ParticipationOptions__3GB-V ">
-                                                    <div
-                                                        class="ParticipationOptions__present-mark__c7jKY ParticipationOptions__selected__1aHBG">
+                                                    <div class="ParticipationOptions__present-mark__c7jKY ParticipationOptions__selected__1aHBG">
                                                         <svg aria-hidden="true" focusable="false" data-prefix="fas"
                                                             data-icon="check" class="svg-inline--fa fa-check fa-w-16 "
                                                             role="img" xmlns="http://www.w3.org/2000/svg"
@@ -298,7 +299,7 @@
                                                         <ul class="ParticipationOptions__reasons__1sOF_">
                                                             <li
                                                                 class="ParticipationOptions__reason__1PQFi ParticipationOptions__labelHeader__dRAmM">
-                                                                Label as:
+                                                                Label as: 
                                                                 <svg aria-hidden="true" focusable="false"
                                                                     data-prefix="fas" data-icon="tag"
                                                                     class="svg-inline--fa fa-tag fa-w-16 fa-xs "
@@ -317,6 +318,10 @@
                                                                 class="ParticipationOptions__reason__1PQFi ">
                                                                 Left early
                                                             </li>
+                                                            <li data-target="#other-label" 
+                                                                class="ParticipationOptions__reason__1PQFi add-label">
+                                                                Other
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                     <div class="Overlay__Overlay__2AcFF " style="z-index: 2;"></div>
@@ -332,7 +337,7 @@
                                                     <path fill="currentColor"
                                                         d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
                                                     </path>
-                                                </svg><span class="AttendenceCell__LabelText__p61Rh">label</span>
+                                                </svg><span class="AttendenceCell__LabelText__p61Rh">Late</span>
                                             </div>
                                         </td>
                                         <td class="Absent">
@@ -2000,6 +2005,32 @@
                         <p>Lorem ipsum dolor sit amet, eu quas ferri.</p>
                     </a>
                 </li>
+                <li class="list-item read">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </a>
+                </li>
+                <li class="list-item unread">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit amet, eu quas ferri.</p>
+                    </a>
+                </li>
+                <li class="list-item unread">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit amet, eu quas ferri.</p>
+                    </a>
+                </li>
+                <li class="list-item unread">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit amet, eu quas ferri.
+                            Ipsum dolor sit amet, eu quas ferri sententiae.</p>
+                    </a>
+                </li>
+                <li class="list-item read">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </a>
+                </li>
                 <li class="list-item unread">
                     <a href="#">
                         <p>Lorem ipsum dolor sit amet, eu quas ferri.
@@ -2023,9 +2054,36 @@
                     </a>
                 </li>
             </ul>
-            <button class="noti-btn">
-                See all notifications
-            </button>
+            
+        <button class="noti-btn">
+            See all notifications
+        </button>
+        </div>
+    </div>
+    <!--other label-->
+    <div id="other-label">
+        
+        <div class="popup-area"></div>
+        <div class="popup">
+                <div class="close">
+                        <i class="fas fa-times"></i>
+                </div>
+            <div class="popup-header">
+                <p>Səbəb əlavə et</p>
+            </div>
+            <div class="popup-body">
+                <form>
+                    <div class="form-item">
+                        <label for="label"> Səbəb</label>
+                        <textarea name="Label" id="label" cols="30" rows="3"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <button class="form-btn remember">Yadda saxla</button>
+                        <button class="form-btn cansel">Ləğv et</button>
+                    </div>
+
+                </form>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
