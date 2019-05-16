@@ -1,0 +1,189 @@
+#student {
+  .group {
+    transition: all 0.1s;
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    width: 280px;
+    height: 70px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid $bg_color;
+    padding: 20px;
+    h4 {
+      font-weight: 900;
+    }
+  }
+  .table-side {
+    .timetable {
+      box-shadow: none;
+      border-radius: 0;
+      table {
+        td,
+        th {
+          width: 140px;
+          height: 50px;
+          font-size: 20px;
+          font-weight: 800;
+          background-color: $bg_undefined;
+          color: #505050;
+          border-left: 1px solid #f2f2f2;
+        }
+        td {
+          .date {
+            padding: 5px 10px;
+            line-height: 20px;
+            background-color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            color: #50505030;
+            &.this-month {
+              color: #505050;
+            }
+          }
+          .visit {
+            position: relative;
+            height: 128px;
+            &.present {
+              color: $undefined;
+              &::after {
+                content: "\f00c"; /* this is your text. You can also use UTF-8 character codes as I do here */
+                font-family: "Font Awesome 5 Free";
+                left: -5px;
+                position: absolute;
+                top: 40%;
+                left: 45%;
+              }
+            }
+            &.today {
+              background-color: #fff;
+              border-top: 1px solid $bg_color;
+            }
+            &.absent {
+              cursor: pointer;
+              color: $warning;
+              background-color: $bg_warning;
+              &::after {
+                content: "\f00d";
+                font-family: "Font Awesome 5 Free";
+                left: -5px;
+                position: absolute;
+                top: 40%;
+                left: 45%;
+              }
+              &.active {
+                &::before {
+                  content: "\f071";
+                  font-family: "Font Awesome 5 Free";
+                  font-size: 12px;
+                  opacity: 0.8;
+                  color: #303030;
+                  position: absolute;
+                  top: 12px;
+                  right: 12px;
+                }
+              }
+            }
+            &.lab-day {
+              &::after {
+                content: "LAB";
+                position: absolute;
+                top: 38%;
+                left: 35%;
+              }
+            }
+            &.free {
+              background-color: #cbcbcb;
+            }
+            &.pending {
+              background-color: #f3f7ff;
+              color: #3f9eeb;
+              &::before {
+                content: "\f141";
+                font-family: "Font Awesome 5 Free";
+                position: absolute;
+                top: 29%;
+                left: 44%;
+              }
+              &::after {
+                content: "Pending";
+                font-size: 14px;
+                font-weight: 800;
+                position: absolute;
+                left: 31%;
+                top: 44%;
+              }
+            }
+            &.approved {
+              background-color: #f3fff5;
+              color: $success;
+              &::before {
+                content: "\f00c";
+                font-family: "Font Awesome 5 Free";
+                position: absolute;
+                top: 29%;
+                left: 44%;
+              }
+              &::after {
+                content: "Approved";
+                font-size: 14px;
+                font-weight: 800;
+                position: absolute;
+                left: 27%;
+                top: 44%;
+              }
+            }
+            &.declined {
+              color: $warning;
+              background-color: $bg_warning;
+              &::before {
+                content: "\f00d";
+                font-family: "Font Awesome 5 Free";
+                position: absolute;
+                top: 29%;
+                left: 44%;
+              }
+              &::after {
+                content: "Declined";
+                font-size: 14px;
+                font-weight: 800;
+                position: absolute;
+                left: 27%;
+                top: 44%;
+              }
+            }
+            &.vacation {
+              border: solid 2px $warning;
+              color: $warning;
+              p {
+              text-align: center;
+                font-size: 18px;
+                font-weight: 800;
+                width: 100px;
+                padding: 37px 0;
+                margin: auto;
+              }
+            }
+            .report {
+              position: absolute;
+              width: 73px;
+              height: 26px;
+              opacity: 0.8;
+              background-color: #303030;
+              border-radius: 3px;
+              text-align: center;
+              line-height: 26px;
+              top: 30px;
+              right: -46px;
+              p {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

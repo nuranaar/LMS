@@ -56,7 +56,7 @@ $(document).ready(() => {
         on: true
     });
 
-    $('.toggle').on("toggle", function (e) {
+    $('.toggle').on("toggle", (e) => {
         if (e.isActive) {
         }
         else {
@@ -67,12 +67,15 @@ $(document).ready(() => {
         let btn = $(e.currentTarget);
         $(`${btn.attr("href")}`).css("display", "block");
     });
+
     $(".noti-area").click((e) => {
         let area = $(e.currentTarget);
+        $(".noti-box").scrollTop(0);
+
         area.parent().css("display", "none");
         $(".noti-box").css({
-            "height":"245px",
-            "overflow-y":"hidden"
+            "height": "245px",
+            "overflow-y": "hidden"
         });
         $(".noti-btn").css("display", "block");
     });
@@ -81,20 +84,41 @@ $(document).ready(() => {
         let btn = $(e.currentTarget);
         btn.css("display", "none");
         $(".noti-box").css({
-            "height":"350px",
-            "overflow-y":"auto"
+            "height": "350px",
+            "overflow-y": "auto"
         });
     });
 
-    $(".add-label").click((e)=>{
+    $(".add-label").click((e) => {
         $($(e.currentTarget).data("target")).css("display", "block");
     });
-    $(".popup-area").click((e) => {
-        $(e.currentTarget)
-        $("#other-label").css("display", "none");
+
+    $(".popup-area").click(() => {
+        $("#add-label").css("display", "none");
     });
-    $(".close").click((e) => {
-        $(e.currentTarget)
-        $("#other-label").css("display", "none");
+
+    $(".close").click(() => {
+        $("#add-label").css("display", "none");
     });
+
+    $(".cansel").click(() => {
+        $("#add-label").css("display", "none");
+    });
+
+    $(".absent").click((e) => {
+        $("#add-label").css("display", "block");
+        $(".popup-form").submit(() => {
+            $(e.currentTarget).removeClass("absent").addClass("pending");
+        });
+    });
+
+    $(".ParticipationOptions__reason-tag__qpMnj").click((e)=>{
+        $(e.currentTarget).next().css("display","block");
+        $(e.currentTarget).siblings(".Overlay__Overlay__2AcFF").css("display","block");
+    })
+    $(".Overlay__Overlay__2AcFF").click((e)=>{
+        $(e.currentTarget).css("display","none");
+        $(e.currentTarget).prev().css("display","none");
+    })
+
 });

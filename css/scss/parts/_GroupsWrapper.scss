@@ -1,9 +1,10 @@
 .Teacher__GroupsWrapper__3ToYy {
   .ParticipationTable__ParticipationTable__NzBVH {
     table {
+      vertical-align: middle !important;
       tr {
         text-align: center;
-        background-color: #e0e0e0;
+        background-color: $bg_undefined;
         th {
           font-weight: 800;
           font-size: 20px;
@@ -11,48 +12,153 @@
         td {
           font-size: 16px;
           font-weight: 600;
-        }
-
-        td,
-        th {
-          color: #505050;
-          padding: 10px;
-          border-left: 2px solid $bg_color;
-          border-bottom: 2px solid $bg_color;
-          width: 202px;
-          &:first-child {
-            width: 270px;
-            background-color: #fff;
-            text-align: left;
+          [class*="check"] {
+            color: $undefined;
+          }
+          [class*="times"] {
+            color: $warning;
+          }
+          .AttendenceCell__AttendenceCell__1mglq {
+            &[class*="Undefined"] {
+              background-color: $bg_undefined;
+              color: $undefined;
+              [class*="check"] {
+                color: $undefined !important;
+              }
+              [class*="LabelText"] {
+                font-weight: 800;
+                padding: 0 7px;
+              }
+            }
+            &[class*="Absent"] {
+              background-color: $bg_warning;
+              color: $warning !important;
+              [class*="times"] {
+                color: $warning !important;
+              }
+              span {
+                font-weight: 800;
+              }
+            }
           }
           &.ParticipationTable__Current__1bTw4 {
             background-color: #fff;
-          }
-          .ParticipationOptions__reason-dropdown__1cjUh {
-            width: 88px;
-            border-radius: 5px;
-            margin-left: auto;
-            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            .ParticipationOptions__reasons__1sOF_ {
-              .ParticipationOptions__reason__1PQFi {
-               
-                  cursor: pointer;
-                
-                &:first-child {
-                  width: 70px;
-                  margin: auto;
-                  border-bottom: solid 2px $bg_color;
-                  cursor: default;
-                }
-                font-size: 12px;
+            [class*="Present"] {
+              background-color: #fff;
+              [class*="check"] {
+                color: $success;
+              }
+              [class*="LabelText"] {
                 font-weight: 800;
-
-                .fa-tag{
-                  margin-left: 6px !important;
-                }
+                padding: 0 7px;
+                color: $success;
               }
             }
+            [class*="Absent"] {
+              background-color: $bg_warning;
+              [class*="times"] {
+                color: $warning;
+              }
+            }
+            .ParticipationOptions__ParticipationOptions__3GB-V {
+              position: relative;
+
+              &[class*="show"] {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #f7f8fe;
+                height: 52px;
+              }
+              [class*="check"],
+              [class*="times"] {
+                color: #fff !important;
+              }
+              [class*="present-mark"] {
+                width: 33px;
+                line-height: 22px;
+                height: 25px;
+                border-radius: 100px 0 0 100px;
+                background-color: #dddddd;
+                &[class*="selected"] {
+                  background-color: $success;
+                }
+              }
+              [class*="absent-mark"] {
+                width: 33px;
+                line-height: 22px;
+                height: 25px;
+                border-radius: 0 100px 100px 0;
+                background-color: #dddddd;
+                &[class*="selected"] {
+                  background-color: $warning;
+                }
+              }
+              [class*="reason-tag"] {
+                position: absolute;
+                top: 14px;
+                right: 6px;
+                background-color: #dddddd;
+                width: 25px;
+                height: 25px;
+                line-height: 22px;
+                border-radius: 100%;
+                font-size: 10px;
+              }
+              .ParticipationOptions__reason-dropdown__1cjUh {
+                display: none;
+                position: absolute;
+                top: 12px;
+                right: 27px;
+                width: 88px;
+                border-radius: 5px;
+                margin-left: auto;
+                box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+                background-color: #fff;
+                .ParticipationOptions__reasons__1sOF_ {
+                  .ParticipationOptions__reason__1PQFi {
+                    cursor: pointer;
+                    line-height: 22px;
+                    &:first-child {
+                      width: 70px;
+                      margin: auto;
+                      border-bottom: solid 2px $bg_color;
+                      cursor: default;
+                    }
+                    font-size: 12px;
+                    font-weight: 800;
+
+                    .fa-tag {
+                      margin-left: 6px !important;
+                    }
+                  }
+                  .remove-label {
+                    color: $warning !important;
+                  }
+                }
+              }
+              .Overlay__Overlay__2AcFF {
+                position: fixed;
+                display: none;
+                width: 100%;
+                height: 100vh;
+                top: 0;
+                right: 0;
+              }
+            }
+          }
+        }
+        td,
+        th {
+          border-left: 2px solid $bg_color;
+          border-bottom: 2px solid $bg_color;
+          width: 150px;
+          line-height: 50px;
+          &:first-child {
+            padding-left: 20px;
+            width: 238px;
+            background-color: #fff;
+            text-align: left;
           }
         }
       }
@@ -60,22 +166,6 @@
   }
 }
 
-.AttendenceCell[disabled].Present {
-  background-color: #e0e0e0;
-  color: #a0a0a0;
-}
-
-.Present {
-  background-color: #fff;
-  color: #00d743 !important;
-  span {
-    font-weight: 800;
-  }
-}
-.Absent {
-  background-color: #fff3f3 !important;
-  color: #eb3f3f !important;
-  span {
-    font-weight: 800;
-  }
+* {
+  vertical-align: middle !important;
 }

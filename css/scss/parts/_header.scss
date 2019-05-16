@@ -33,10 +33,25 @@
         height: 40px;
         background-color: #97979714;
       }
+      .open-noti{
+        &.active{
+          &::after{
+            content: "";
+            position: absolute; 
+            top: -3px;
+            right: 24px;
+            background-color: $warning;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            border:2px solid #fff;
+          }
+        }
+      }
       .bell-outline {
         width: 17px;
         height: 20px;
-      }
+      } 
     }
     .user-photo {
       padding-right: 39px;
@@ -130,7 +145,7 @@
     bottom: 5px;
   }
 }
-#other-label {
+#add-label {
   display: none;
   position: fixed;
   width: 100%;

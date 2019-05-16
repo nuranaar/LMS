@@ -82,10 +82,13 @@
               padding: 10px 0 0 20px;
               width: 100%;
               p {
+                width: 85px;
+                line-height: 1.08;
                 color: $span_color;
                 font-weight: 500;
                 line-height: 13px;
                 font-size: 12px;
+                padding: 5px 0 10px 0;
                 span {
                   font-weight: 900;
                   line-height: 15px;
@@ -103,6 +106,7 @@
           color: #cacaca;
           line-height: 19px;
           bottom: 0;
+          left: 0;
         }
       }
     }
