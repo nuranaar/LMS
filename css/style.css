@@ -344,6 +344,13 @@ main .weekly-pagination {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main .weekly-pagination li {
+  margin-bottom: 12px;
+}
+
+main .weekly-pagination li:nth-child(2) {
   margin-bottom: 0;
 }
 
@@ -352,6 +359,7 @@ main .weekly-pagination .page-item {
   padding: 22px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  margin-bottom: 0;
 }
 
 main .weekly-pagination .page-item:hover {
@@ -367,7 +375,13 @@ main .weekly-pagination .this-week {
   font-size: 24px;
   font-weight: 900;
   color: #fff;
-  margin-bottom: 0;
+  border: none;
+  background: #00a2ff;
+  text-align: center;
+}
+
+main .weekly-pagination .this-week:focus {
+  outline: none;
 }
 
 main .weekly-pagination .btn-this-week {
@@ -806,7 +820,7 @@ main .weekly-pagination .btn-this-week:hover {
 
 #student .table-side .timetable table td,
 #student .table-side .timetable table th {
-  width: 140px;
+  width: 141.1px;
   height: 50px;
   font-size: 20px;
   font-weight: 800;
@@ -955,9 +969,23 @@ main .weekly-pagination .btn-this-week:hover {
   top: 44%;
 }
 
-#student .table-side .timetable table td .visit.vacation {
+#student .table-side .timetable table td .visit.holiday {
   border: solid 2px #eb3f3f;
   color: #eb3f3f;
+}
+
+#student .table-side .timetable table td .visit.holiday p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  width: 100px;
+  padding: 37px 0;
+  margin: auto;
+}
+
+#student .table-side .timetable table td .visit.vacation {
+  border: solid 2px #000;
+  color: #303030;
 }
 
 #student .table-side .timetable table td .visit.vacation p {

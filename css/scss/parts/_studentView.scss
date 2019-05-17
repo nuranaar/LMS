@@ -21,7 +21,7 @@
       table {
         td,
         th {
-          width: 140px;
+          width: 141.1px;
           height: 50px;
           font-size: 20px;
           font-weight: 800;
@@ -152,9 +152,21 @@
                 top: 44%;
               }
             }
-            &.vacation {
+            &.holiday {
               border: solid 2px $warning;
               color: $warning;
+              p {
+              text-align: center;
+                font-size: 18px;
+                font-weight: 800;
+                width: 100px;
+                padding: 37px 0;
+                margin: auto;
+              }
+            }
+            &.vacation{
+              border: solid 2px #000;
+              color: $text_color;
               p {
               text-align: center;
                 font-size: 18px;
@@ -169,7 +181,7 @@
               width: 73px;
               height: 26px;
               opacity: 0.8;
-              background-color: #303030;
+              background-color: $text_color;
               border-radius: 3px;
               text-align: center;
               line-height: 26px;

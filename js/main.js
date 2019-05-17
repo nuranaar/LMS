@@ -119,6 +119,11 @@ $(document).ready(() => {
     $(".Overlay__Overlay__2AcFF").click((e)=>{
         $(e.currentTarget).css("display","none");
         $(e.currentTarget).prev().css("display","none");
+    });
+
+    $('.this-week').click((e)=>{
+        $(e.currentTarget).data('datepicker');
+
     })
 
 });
