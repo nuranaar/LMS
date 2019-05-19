@@ -1,0 +1,260 @@
+#manager {
+  .btn-this-week {
+    right: 160px;
+    &:hover {
+      background-color: #fff;
+      color: $main_color;
+    }
+  }
+
+  .btn-export {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 100px;
+    height: 30px;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    background-color: $main_color;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    &:hover {
+      background-color: #fff;
+      color: $main_color;
+    }
+  }
+  .programs {
+    .program {
+      width: 100%;
+      height: 42px;
+      padding-left: 20px;
+      color: #303030;
+      border: none;
+      border-bottom: solid 0.5px #f2f2f2;
+
+      .sel-item {
+        line-height: 42px;
+      }
+    }
+  }
+  .groups-item {
+    .group {
+      padding: 23px 20px;
+    }
+  }
+  .table-side {
+    .timetable {
+      box-shadow: none;
+      border-radius: 0;
+      table {
+        td,
+        th {
+          font-size: 20px;
+          font-weight: 800;
+          background-color: $bg_undefined;
+          color: #505050;
+          border-left: 1px solid #f2f2f2;
+        }
+        th {
+          background-color: #fff;
+          line-height: 35px;
+        }
+        td {
+          border-top: 1px solid #f2f2f2;
+          .student-fullname {
+            background-color: #fff !important;
+            line-height: 49px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #505050;
+            padding-left: 20px;
+            width: 273px;
+          }
+          .visit {
+            position: relative;
+            height: 49px;
+            width: 142px;
+
+            &.present {
+              color: $undefined;
+              &::after {
+                content: "\f00c";
+                font-family: "Font Awesome 5 Free";
+                left: -5px;
+                position: absolute;
+                top: 40%;
+                left: 45%;
+              }
+            }
+            &.absent {
+              &:hover {
+                .report {
+                  opacity: 0.8;
+                }
+              }
+              cursor: pointer;
+              color: $warning;
+              background-color: $bg_warning;
+              &::after {
+                content: "\f00d";
+                font-family: "Font Awesome 5 Free";
+                left: -5px;
+                position: absolute;
+                top: 40%;
+                left: 45%;
+              }
+              .report {
+                font-size: 12px;
+                opacity: 0.8;
+                color: #303030;
+                position: absolute;
+                top: 12px;
+                right: 12px;
+              }
+              .report-button {
+                position: absolute;
+                width: 73px;
+                height: 26px;
+                opacity: 0.8;
+                background-color: $text_color;
+                border-radius: 3px;
+                text-align: center;
+                line-height: 26px;
+                top: 20px;
+                left: -5px;
+                z-index: 4;
+                p {
+                  color: #fff;
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+              }
+            }
+            [class*="ParticipationOptions"] {
+              position: relative;
+display: none;
+              &[class*="show"] {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #f7f8fe;
+                height: 52px;
+              }
+
+              [class*="present-mark"] {
+                width: 33px;
+                line-height: 22px;
+                height: 25px;
+                border-radius: 100px 0 0 100px;
+                background-color: #dddddd;
+                &[class*="selected"] {
+                  background-color: $success;
+                }
+                &::after {
+                  content: "\f00c";
+                  color: #fff;
+                  font-family: "Font Awesome 5 Free";
+                  font-size: 16px;
+                  position: absolute;
+                  top: 16px;
+                  left: 47px;
+                }
+              }
+              [class*="absent-mark"] {
+                width: 33px;
+                line-height: 22px;
+                height: 25px;
+                border-radius: 0 100px 100px 0;
+                background-color: #dddddd;
+                &[class*="selected"] {
+                  background-color: $warning;
+                }
+                &::after {
+                    content: "\f00d";
+                    color: #fff;
+                    font-family: "Font Awesome 5 Free";
+                    font-size: 16px;
+                    position: absolute;
+                    top: 16px;
+                    right: 49px;
+                  }
+              }
+              [class*="reason-tag"] {
+                position: absolute;
+                top: 14px;
+                right: 6px;
+                background-color: #dddddd;
+                width: 25px;
+                height: 25px;
+                line-height: 22px;
+                border-radius: 100%;
+                font-size: 10px;
+                &::after {
+                    content: "\f02b";
+                    color: #000;
+                    font-family: "Font Awesome 5 Free";
+                    font-size: 10px;
+                    position: absolute;
+                    right: 7px;
+                    top: 2px;
+                  }
+              }
+              [class*="reason-dropdown"] {
+                display: none;
+                position: absolute;
+                top: 12px;
+                right: 27px;
+                width: 88px;
+                border-radius: 5px;
+                margin-left: auto;
+                box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+                background-color: #fff;
+                [class*="reasons"] {
+                  [class*="reason"] {
+                    cursor: pointer;
+                    line-height: 22px;
+                    text-align: center;
+                    &:first-child {
+                        text-align: left;
+                      width: 70px;
+                      margin: auto;
+                      border-bottom: solid 2px $bg_color;
+                      cursor: default;
+                      &::after {
+                        content: "\f02b";
+                        color: #000;
+                        font-family: "Font Awesome 5 Free";
+                        font-size: 10px;
+                        position: absolute;
+                        right: 7px;
+                        top: 2px;
+                      }
+                    }
+                    font-size: 12px;
+                    font-weight: 800;
+
+                    &[class*="selected"] {
+                      background-color: #f7f8fe;
+                    }
+                  }
+                  .remove-label {
+                    color: $warning !important;
+                  }
+                }
+              }
+              [class*="Overlay"] {
+                position: fixed;
+                display: none;
+                width: 100%;
+                height: 100vh;
+                top: 0;
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

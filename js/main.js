@@ -90,6 +90,8 @@ $(document).ready(() => {
     });
 
     $(".add-label").click((e) => {
+        $(e.currentTarget).parents(".reason-dropdown").css("display", "none");
+        $(e.currentTarget).parents(".reason-dropdown").siblings('[class*="Overlay"]').css("display", "none");
         $($(e.currentTarget).data("target")).css("display", "block");
     });
 
@@ -105,25 +107,60 @@ $(document).ready(() => {
         $("#add-label").css("display", "none");
     });
 
-    $(".absent").click((e) => {
-        $("#add-label").css("display", "block");
-        $(".popup-form").submit(() => {
-            $(e.currentTarget).removeClass("absent").addClass("pending");
-        });
-    });
 
-    $(".ParticipationOptions__reason-tag__qpMnj").click((e)=>{
-        $(e.currentTarget).next().css("display","block");
-        $(e.currentTarget).siblings(".Overlay__Overlay__2AcFF").css("display","block");
+    $('[class*="reason-tag"').click((e) => {
+        $(e.currentTarget).next().css("display", "block");
+        $(e.currentTarget).siblings('[class*="Overlay"]').css("display", "block");
     })
-    $(".Overlay__Overlay__2AcFF").click((e)=>{
-        $(e.currentTarget).css("display","none");
-        $(e.currentTarget).prev().css("display","none");
+    $('[class*="Overlay"]').click((e) => {
+        $(e.currentTarget).css("display", "none");
+        $(e.currentTarget).prev().css("display", "none");
     });
 
-    $('.this-week').click((e)=>{
+    $('.this-week').click((e) => {
         $(e.currentTarget).data('datepicker');
 
     })
+    $("#student").find(".absent").on("mouseenter", (e) => {
+        let absent = $(e.currentTarget);
+        let report = '<div class="report"><i class="fas fa-exclamation-triangle"></i></div>';
+        absent.append(report);
+
+    });
+    $(document).on("mouseenter", ".report", (e) => {
+        let reportBtn = '<div class="report-button"><p>Report</p></div>';
+        $(e.currentTarget).append(reportBtn);
+
+        $(".report-button").click((e) => {
+            $("#add-label").css("display", "block");
+            $(".popup-form").submit(() => {
+                $(e.currentTarget).empty();
+                $(e.currentTarget).removeClass("absent").addClass("pending");
+
+            });
+        });
+    });
+    $("#student").find(".absent").on("mouseleave", (e) => {
+        $(e.currentTarget).empty();
+    });
+
+    $("#manager").find(".visit").click((e) => {
+        if ($(e.currentTarget).hasClass("present")) {
+            $(e.currentTarget).removeClass("present");
+            $(e.currentTarget).find(".present-mark").addClass("selected");
+
+        }
+        else if ($(e.currentTarget).hasClass("absent")) {
+            $(e.currentTarget).removeClass("absent");
+            $(e.currentTarget).find(".absent-mark").addClass("selected");
+
+        }
+        if($(e.currentTarget).parents("tbody").find(".ParticipationOptions").hasClass("show")){
+            $(e.currentTarget).parents("tbody").find(".ParticipationOptions").removeClass("show");
+        }
+        $(e.currentTarget).find(".ParticipationOptions").addClass("show");
+
+    });
+
 
 });

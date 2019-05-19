@@ -301,6 +301,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 #add-label .popup .popup-body .form-item {
   padding: 0 20px;
+  line-height: 30px;
 }
 
 #add-label .popup .popup-body .form-item textarea {
@@ -328,6 +329,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   background-color: #fff;
   border-radius: 5px;
   padding: 8px 14px 5px 13px;
+}
+
+#add-label .popup .popup-body .form-item .attachment {
+  width: 20px;
+  height: 11px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#add-label .popup .popup-body .form-item.attach {
+  text-align: right;
 }
 
 main .weekly-pagination {
@@ -670,11 +682,11 @@ main .weekly-pagination .btn-this-week:hover {
   color: #eb3f3f;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] {
   position: relative;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V[class*="show"] {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"][class*="show"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,12 +700,12 @@ main .weekly-pagination .btn-this-week:hover {
   height: 52px;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V [class*="check"],
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V [class*="times"] {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="check"],
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="times"] {
   color: #fff !important;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V [class*="present-mark"] {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="present-mark"] {
   width: 33px;
   line-height: 22px;
   height: 25px;
@@ -701,11 +713,11 @@ main .weekly-pagination .btn-this-week:hover {
   background-color: #dddddd;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V [class*="present-mark"][class*="selected"] {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="present-mark"][class*="selected"] {
   background-color: #00d743;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V [class*="absent-mark"] {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="absent-mark"] {
   width: 33px;
   line-height: 22px;
   height: 25px;
@@ -713,11 +725,11 @@ main .weekly-pagination .btn-this-week:hover {
   background-color: #dddddd;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V [class*="absent-mark"][class*="selected"] {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="absent-mark"][class*="selected"] {
   background-color: #eb3f3f;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V [class*="reason-tag"] {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="reason-tag"] {
   position: absolute;
   top: 14px;
   right: 6px;
@@ -729,7 +741,7 @@ main .weekly-pagination .btn-this-week:hover {
   font-size: 10px;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V .ParticipationOptions__reason-dropdown__1cjUh {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="reason-dropdown"] {
   display: none;
   position: absolute;
   top: 12px;
@@ -742,29 +754,33 @@ main .weekly-pagination .btn-this-week:hover {
   background-color: #fff;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V .ParticipationOptions__reason-dropdown__1cjUh .ParticipationOptions__reasons__1sOF_ .ParticipationOptions__reason__1PQFi {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="reason-dropdown"] [class*="reasons"] [class*="reason"] {
   cursor: pointer;
   line-height: 22px;
   font-size: 12px;
   font-weight: 800;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V .ParticipationOptions__reason-dropdown__1cjUh .ParticipationOptions__reasons__1sOF_ .ParticipationOptions__reason__1PQFi:first-child {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="reason-dropdown"] [class*="reasons"] [class*="reason"]:first-child {
   width: 70px;
   margin: auto;
   border-bottom: solid 2px #f2f2f2;
   cursor: default;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V .ParticipationOptions__reason-dropdown__1cjUh .ParticipationOptions__reasons__1sOF_ .ParticipationOptions__reason__1PQFi .fa-tag {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="reason-dropdown"] [class*="reasons"] [class*="reason"] .fa-tag {
   margin-left: 6px !important;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V .ParticipationOptions__reason-dropdown__1cjUh .ParticipationOptions__reasons__1sOF_ .remove-label {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="reason-dropdown"] [class*="reasons"] [class*="reason"][class*="selected"] {
+  background-color: #f7f8fe;
+}
+
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="reason-dropdown"] [class*="reasons"] .remove-label {
   color: #eb3f3f !important;
 }
 
-.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 .ParticipationOptions__ParticipationOptions__3GB-V .Overlay__Overlay__2AcFF {
+.Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="Overlay"] {
   position: fixed;
   display: none;
   width: 100%;
@@ -853,7 +869,6 @@ main .weekly-pagination .btn-this-week:hover {
 
 #student .table-side .timetable table td .visit.present::after {
   content: "\f00c";
-  /* this is your text. You can also use UTF-8 character codes as I do here */
   font-family: "Font Awesome 5 Free";
   left: -5px;
   position: absolute;
@@ -872,6 +887,10 @@ main .weekly-pagination .btn-this-week:hover {
   background-color: #fff3f3;
 }
 
+#student .table-side .timetable table td .visit.absent:hover .report {
+  opacity: 0.8;
+}
+
 #student .table-side .timetable table td .visit.absent::after {
   content: "\f00d";
   font-family: "Font Awesome 5 Free";
@@ -881,15 +900,33 @@ main .weekly-pagination .btn-this-week:hover {
   left: 45%;
 }
 
-#student .table-side .timetable table td .visit.absent.active::before {
-  content: "\f071";
-  font-family: "Font Awesome 5 Free";
+#student .table-side .timetable table td .visit.absent .report {
   font-size: 12px;
   opacity: 0.8;
   color: #303030;
   position: absolute;
   top: 12px;
   right: 12px;
+}
+
+#student .table-side .timetable table td .visit.absent .report-button {
+  position: absolute;
+  width: 73px;
+  height: 26px;
+  opacity: 0.8;
+  background-color: #303030;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 26px;
+  top: 20px;
+  left: -5px;
+  z-index: 4;
+}
+
+#student .table-side .timetable table td .visit.absent .report-button p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 #student .table-side .timetable table td .visit.lab-day::after {
@@ -997,7 +1034,133 @@ main .weekly-pagination .btn-this-week:hover {
   margin: auto;
 }
 
-#student .table-side .timetable table td .visit .report {
+#manager .btn-this-week {
+  right: 160px;
+}
+
+#manager .btn-this-week:hover {
+  background-color: #fff;
+  color: #00a2ff;
+}
+
+#manager .btn-export {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 100px;
+  height: 30px;
+  border: 1.5px solid #fff;
+  border-radius: 5px;
+  background-color: #00a2ff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#manager .btn-export:hover {
+  background-color: #fff;
+  color: #00a2ff;
+}
+
+#manager .programs .program {
+  width: 100%;
+  height: 42px;
+  padding-left: 20px;
+  color: #303030;
+  border: none;
+  border-bottom: solid 0.5px #f2f2f2;
+}
+
+#manager .programs .program .sel-item {
+  line-height: 42px;
+}
+
+#manager .groups-item .group {
+  padding: 23px 20px;
+}
+
+#manager .table-side .timetable {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+}
+
+#manager .table-side .timetable table td,
+#manager .table-side .timetable table th {
+  font-size: 20px;
+  font-weight: 800;
+  background-color: #e0e0e0;
+  color: #505050;
+  border-left: 1px solid #f2f2f2;
+}
+
+#manager .table-side .timetable table th {
+  background-color: #fff;
+  line-height: 35px;
+}
+
+#manager .table-side .timetable table td {
+  border-top: 1px solid #f2f2f2;
+}
+
+#manager .table-side .timetable table td .student-fullname {
+  background-color: #fff !important;
+  line-height: 49px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #505050;
+  padding-left: 20px;
+  width: 273px;
+}
+
+#manager .table-side .timetable table td .visit {
+  position: relative;
+  height: 49px;
+  width: 142px;
+}
+
+#manager .table-side .timetable table td .visit.present {
+  color: #a0a0a0;
+}
+
+#manager .table-side .timetable table td .visit.present::after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  left: -5px;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+
+#manager .table-side .timetable table td .visit.absent {
+  cursor: pointer;
+  color: #eb3f3f;
+  background-color: #fff3f3;
+}
+
+#manager .table-side .timetable table td .visit.absent:hover .report {
+  opacity: 0.8;
+}
+
+#manager .table-side .timetable table td .visit.absent::after {
+  content: "\f00d";
+  font-family: "Font Awesome 5 Free";
+  left: -5px;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+
+#manager .table-side .timetable table td .visit.absent .report {
+  font-size: 12px;
+  opacity: 0.8;
+  color: #303030;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+#manager .table-side .timetable table td .visit.absent .report-button {
   position: absolute;
   width: 73px;
   height: 26px;
@@ -1006,13 +1169,155 @@ main .weekly-pagination .btn-this-week:hover {
   border-radius: 3px;
   text-align: center;
   line-height: 26px;
-  top: 30px;
-  right: -46px;
+  top: 20px;
+  left: -5px;
+  z-index: 4;
 }
 
-#student .table-side .timetable table td .visit .report p {
+#manager .table-side .timetable table td .visit.absent .report-button p {
   color: #fff;
   font-size: 16px;
   font-weight: 600;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] {
+  position: relative;
+  display: none;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"][class*="show"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f7f8fe;
+  height: 52px;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="present-mark"] {
+  width: 33px;
+  line-height: 22px;
+  height: 25px;
+  border-radius: 100px 0 0 100px;
+  background-color: #dddddd;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="present-mark"][class*="selected"] {
+  background-color: #00d743;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="present-mark"]::after {
+  content: "\f00c";
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-size: 16px;
+  position: absolute;
+  top: 16px;
+  left: 47px;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="absent-mark"] {
+  width: 33px;
+  line-height: 22px;
+  height: 25px;
+  border-radius: 0 100px 100px 0;
+  background-color: #dddddd;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="absent-mark"][class*="selected"] {
+  background-color: #eb3f3f;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="absent-mark"]::after {
+  content: "\f00d";
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-size: 16px;
+  position: absolute;
+  top: 16px;
+  right: 49px;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="reason-tag"] {
+  position: absolute;
+  top: 14px;
+  right: 6px;
+  background-color: #dddddd;
+  width: 25px;
+  height: 25px;
+  line-height: 22px;
+  border-radius: 100%;
+  font-size: 10px;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="reason-tag"]::after {
+  content: "\f02b";
+  color: #000;
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+  position: absolute;
+  right: 7px;
+  top: 2px;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="reason-dropdown"] {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 27px;
+  width: 88px;
+  border-radius: 5px;
+  margin-left: auto;
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="reason-dropdown"] [class*="reasons"] [class*="reason"] {
+  cursor: pointer;
+  line-height: 22px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="reason-dropdown"] [class*="reasons"] [class*="reason"]:first-child {
+  text-align: left;
+  width: 70px;
+  margin: auto;
+  border-bottom: solid 2px #f2f2f2;
+  cursor: default;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="reason-dropdown"] [class*="reasons"] [class*="reason"]:first-child::after {
+  content: "\f02b";
+  color: #000;
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+  position: absolute;
+  right: 7px;
+  top: 2px;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="reason-dropdown"] [class*="reasons"] [class*="reason"][class*="selected"] {
+  background-color: #f7f8fe;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="reason-dropdown"] [class*="reasons"] .remove-label {
+  color: #eb3f3f !important;
+}
+
+#manager .table-side .timetable table td .visit [class*="ParticipationOptions"] [class*="Overlay"] {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -47,7 +47,7 @@
             &.present {
               color: $undefined;
               &::after {
-                content: "\f00c"; /* this is your text. You can also use UTF-8 character codes as I do here */
+                content: "\f00c";
                 font-family: "Font Awesome 5 Free";
                 left: -5px;
                 position: absolute;
@@ -60,6 +60,11 @@
               border-top: 1px solid $bg_color;
             }
             &.absent {
+              &:hover {
+                .report {
+                  opacity: 0.8;
+                }
+              }
               cursor: pointer;
               color: $warning;
               background-color: $bg_warning;
@@ -71,18 +76,33 @@
                 top: 40%;
                 left: 45%;
               }
-              &.active {
-                &::before {
-                  content: "\f071";
-                  font-family: "Font Awesome 5 Free";
-                  font-size: 12px;
-                  opacity: 0.8;
-                  color: #303030;
-                  position: absolute;
-                  top: 12px;
-                  right: 12px;
+              .report {
+                font-size: 12px;
+                opacity: 0.8;
+                color: #303030;
+                position: absolute;
+                top: 12px;
+                right: 12px;
+              }
+              .report-button {
+                position: absolute;
+                width: 73px;
+                height: 26px;
+                opacity: 0.8;
+                background-color: $text_color;
+                border-radius: 3px;
+                text-align: center;
+                line-height: 26px;
+                top: 20px;
+                left: -5px;
+                z-index: 4;
+                p {
+                  color: #fff;
+                  font-size: 16px;
+                  font-weight: 600;
                 }
               }
+
             }
             &.lab-day {
               &::after {
@@ -156,7 +176,7 @@
               border: solid 2px $warning;
               color: $warning;
               p {
-              text-align: center;
+                text-align: center;
                 font-size: 18px;
                 font-weight: 800;
                 width: 100px;
@@ -164,33 +184,16 @@
                 margin: auto;
               }
             }
-            &.vacation{
+            &.vacation {
               border: solid 2px #000;
               color: $text_color;
               p {
-              text-align: center;
+                text-align: center;
                 font-size: 18px;
                 font-weight: 800;
                 width: 100px;
                 padding: 37px 0;
                 margin: auto;
-              }
-            }
-            .report {
-              position: absolute;
-              width: 73px;
-              height: 26px;
-              opacity: 0.8;
-              background-color: $text_color;
-              border-radius: 3px;
-              text-align: center;
-              line-height: 26px;
-              top: 30px;
-              right: -46px;
-              p {
-                color: #fff;
-                font-size: 16px;
-                font-weight: 600;
               }
             }
           }

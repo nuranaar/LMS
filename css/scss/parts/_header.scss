@@ -33,25 +33,25 @@
         height: 40px;
         background-color: #97979714;
       }
-      .open-noti{
-        &.active{
-          &::after{
+      .open-noti {
+        &.active {
+          &::after {
             content: "";
-            position: absolute; 
+            position: absolute;
             top: -3px;
             right: 24px;
             background-color: $warning;
             width: 10px;
             height: 10px;
             border-radius: 100%;
-            border:2px solid #fff;
+            border: 2px solid #fff;
           }
         }
       }
       .bell-outline {
         width: 17px;
         height: 20px;
-      } 
+      }
     }
     .user-photo {
       padding-right: 39px;
@@ -190,6 +190,7 @@
     .popup-body {
       .form-item {
         padding: 0 20px;
+        line-height: 30px;
         textarea {
           width: 310px;
           height: 50px;
@@ -212,6 +213,14 @@
             border-radius: 5px;
             padding: 8px 14px 5px 13px;
           }
+        }
+        .attachment {
+          width: 20px;
+          height: 11px;
+          object-fit: contain;
+        }
+        &.attach {
+          text-align: right;
         }
       }
     }
