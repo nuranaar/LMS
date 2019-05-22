@@ -97,14 +97,22 @@ $(document).ready(() => {
 
     $(".popup-area").click(() => {
         $("#add-label").css("display", "none");
+        $("#add-rol").css("display", "none");
+        $("#add-user").css("display", "none");
     });
 
     $(".close").click(() => {
+        $("#add-rol").css("display", "none");
         $("#add-label").css("display", "none");
+        $("#add-user").css("display", "none");
+
     });
 
     $(".cansel").click(() => {
+        $("#add-rol").css("display", "none");
         $("#add-label").css("display", "none");
+        $("#add-user").css("display", "none");
+
     });
 
 
@@ -146,21 +154,104 @@ $(document).ready(() => {
 
     $("#manager").find(".visit").click((e) => {
         if ($(e.currentTarget).hasClass("present")) {
-            $(e.currentTarget).removeClass("present");
             $(e.currentTarget).find(".present-mark").addClass("selected");
 
         }
         else if ($(e.currentTarget).hasClass("absent")) {
-            $(e.currentTarget).removeClass("absent");
             $(e.currentTarget).find(".absent-mark").addClass("selected");
 
         }
-        if($(e.currentTarget).parents("tbody").find(".ParticipationOptions").hasClass("show")){
+        if ($(e.currentTarget).parents("tbody").find(".ParticipationOptions").hasClass("show")) {
             $(e.currentTarget).parents("tbody").find(".ParticipationOptions").removeClass("show");
         }
         $(e.currentTarget).find(".ParticipationOptions").addClass("show");
+    });
 
+    $(".add").click((e) => {
+        $($(e.currentTarget).data("target")).css("display", "block");
+    })
+
+    $(".check-box").click((e) => {
+        if ($(e.currentTarget).hasClass("checked")) {
+            $(e.currentTarget).parents("tr").css("background-color", " #f9f9f9");
+            $(e.currentTarget).removeClass("checked");
+
+        } else {
+            $(e.currentTarget).addClass("checked");
+            $(e.currentTarget).parents("tr").css("background-color", "#efefef");
+        }
+    });
+    $(".checked").parents("tr").css("background-color", " #efefef");
+
+    $(".add-input").click((e) => {
+        let input = ` <div class="form-item">
+        <input type="text" placeholder="  E-mail">
+    </div>`;
+        $(e.currentTarget).before(input);
     });
 
 
+    $(".btn-item").click((e) => {
+        if (!$(e.currentTarget).hasClass("selected")) {
+            $(e.currentTarget).addClass("selected");
+            $($(e.currentTarget).data("target")).css("display", "block");
+        }
+        if ($(e.currentTarget).siblings().hasClass("selected")) {
+            $(e.currentTarget).siblings().removeClass("selected");
+            $($(e.currentTarget).siblings().data("target")).css("display", "none");
+        }
+    });
+
+    $($(".selected").data("target")).css("display", "block");
+    $(".on-off").click((e) => {
+        $(e.currentTarget).toggleClass("active");
+    });
+
+    $(document).on("focus",".faculty-input",(e) => {
+        $(e.currentTarget).css({
+            "font-weigh": "bold",
+            "background-color": "#fff",
+            "color": "#303030"
+        });
+    });
+
+    $(document).on("blur", ".faculty-input",(e) => {
+        $(e.currentTarget).css({
+            "font-weigh": "800",
+            "background-color": "#00a2ff",
+            "color": "#fff"
+        });
+    });
+
+    $(".add-card").click((e) => {
+        let card = `<div class="card">
+        <div class="card-head">
+                <input class="faculty-input" type="text" placeholder="İmtiyaz">
+        </div>
+        <div class="card-body">
+            <ul class="list">
+                <li class="list-item">
+                    <div class="on-off">
+                    </div>
+                    <span>Görsün</span>
+                </li>
+                <li class="list-item">
+                    <div class="on-off"></div>
+                    <span>Yarat</span>
+                </li>
+                <li class="list-item">
+                    <div class="on-off"></div>
+                    <span>Redaktə et</span>
+                </li>
+                <li class="list-item">
+                    <div class="on-off"></div>
+                    <span>Sil</span>
+                </li>
+            </ul>
+        </div>
+    </div>`;
+    $(e.currentTarget).before(card);
+    });
+
 });
+

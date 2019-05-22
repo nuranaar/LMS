@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fa.css">
+    <title>Admin View</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/minitoggle.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="col-2 head-left">
+            <div class="logo">
+                <img class="CA-Copy" src="img/code_logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="col-2 head-right">
+            <div class="search">
+                <a data-target="#">
+                    <img src="img/icons/magnify.png" class="magnify" alt="search">
+                </a>
+            </div>
+            <div class="notification">
+                <a class="open-noti active" href="#noti">
+                    <img src="img/icons/bell-outline.png" class="bell-outline" alt="search">
+                </a>
+            </div>
+            <div class="user-photo">
+                <a href="#">
+                    <img src="img/users/user.jpg" class="user-pp" alt="user">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main id="admin">
+        <div class="head">
+            <div class="title">
+                <h4>Rollar</h4>
+            </div>
+            <div class="add" data-target="#add-rol">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+        <div class="body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rol</th>
+                        <th style="width:800px">İstifadəçilər</th>
+                        <th>Əməliyyat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Müəllimlər</td>
+                        <td>
+                            <ul class="user-list">
+                                <li class="user-item"><img src="img/users/oval-copy-12.png" alt=""></li>
+                                <li class="user-item"><img src="img/users/oval-copy-4.png" alt=""></li>
+                                <li class="user-item"><img src="img/users/oval-copy-9.png" alt=""></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <button class="edit"><i class="fas fa-pen"></i></button>
+                            <button class="delete"><i class="far fa-trash-alt"></i></button>
+                        </td>
+                    </tr>
+                    <tr class="separator"></tr>
+
+                    <tr>
+                        <td>Müəllimlər</td>
+                        <td>
+                            <ul class="user-list">
+                                <li class="user-item"><img src="img/users/oval-copy-12.png" alt=""></li>
+                                <li class="user-item"><img src="img/users/oval-copy-4.png" alt=""></li>
+                                <li class="user-item"><img src="img/users/oval-copy-9.png" alt=""></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <button class="edit"><i class="fas fa-pen"></i></button>
+                            <button class="delete"><i class="far fa-trash-alt"></i></button>
+                        </td>
+                    </tr>
+                    <tr class="separator"></tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+    <!--notifications-->
+    <div id="noti">
+        <div class="noti-area">
+
+        </div>
+        <div class="noti-box">
+            <ul class="list">
+                <li class="list-item unread">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit amet, eu quas ferri.</p>
+                    </a>
+                </li>
+                <li class="list-item unread">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit amet, eu quas ferri.</p>
+                    </a>
+                </li>
+                <li class="list-item read">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </a>
+                </li>
+                <li class="list-item unread">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit amet, eu quas ferri.</p>
+                    </a>
+                </li>
+                <li class="list-item unread">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit amet, eu quas ferri.</p>
+                    </a>
+                </li>
+                <li class="list-item unread">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit amet, eu quas ferri.
+                            Ipsum dolor sit amet, eu quas ferri sententiae.</p>
+                    </a>
+                </li>
+                <li class="list-item read">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </a>
+                </li>
+                <li class="list-item unread">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit amet, eu quas ferri.
+                            Ipsum dolor sit amet, eu quas ferri sententiae.</p>
+                    </a>
+                </li>
+                <li class="list-item read">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </a>
+                </li>
+                <li class="list-item read">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit amet, eu quas ferri.
+                            Ipsum dolor sit amet, eu quas ferri sententiae.</p>
+                    </a>
+                </li>
+                <li class="list-item read">
+                    <a href="#">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="noti-btn">
+                See all notifications
+            </button>
+        </div>
+    </div>
+
+    <!---->
+    <div id="add-rol">
+        <div class="popup-area"></div>
+        <div class="popup">
+            <div class="close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="popup-header">
+                <p>Rol əlavə et</p>
+            </div>
+            <div class="popup-body">
+                <form class="popup-form">
+                    <div class="form-item">
+                        <label for="rol">Rol</label>
+                        <input name="rol" id="rol" placeholder="">
+                    </div>
+
+                    <div class="form-item">
+                        <button type="submit" class="form-btn remember">Təstiqlə</button>
+                        <button class="form-btn cansel">Ləğv et</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="js/minitoggle.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -55,7 +55,6 @@
     }
     .user-photo {
       padding-right: 39px;
-      padding-left: 27px;
       .user-pp {
         width: 36px;
         height: 36px;
@@ -145,7 +144,9 @@
     bottom: 5px;
   }
 }
-#add-label {
+#add-label,
+#add-rol,
+#add-user {
   display: none;
   position: fixed;
   width: 100%;
@@ -190,10 +191,19 @@
     .popup-body {
       .form-item {
         padding: 0 20px;
-        line-height: 30px;
+        label {
+          line-height: 30px;
+        }
         textarea {
           width: 310px;
           height: 50px;
+          border-radius: 5px;
+          border: solid 0.5px #979797;
+        }
+        input {
+          margin-top: 10px;
+          line-height: 30px;
+          width: 310px;
           border-radius: 5px;
           border: solid 0.5px #979797;
         }
@@ -221,6 +231,26 @@
         }
         &.attach {
           text-align: right;
+        }
+      }
+      .add-input {
+        cursor: pointer;
+        text-align: right;
+        opacity: 0.3;
+        color: #505050;
+        padding: 10px 10px 0 0;
+        i {
+          border: 2px solid #505050;
+          border-radius: 100%;
+          width: 14px;
+          height: 14px;
+          font-size: 8px;
+          padding-top: 1px;
+          text-align: center;
+        }
+        span {
+          font-size: 14px;
+          font-weight: 600;
         }
       }
     }
