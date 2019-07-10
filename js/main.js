@@ -92,28 +92,23 @@ $(document).ready(() => {
     $(".add-label").click((e) => {
         $(e.currentTarget).parents(".reason-dropdown").css("display", "none");
         $(e.currentTarget).parents(".reason-dropdown").siblings('[class*="Overlay"]').css("display", "none");
-        $($(e.currentTarget).data("target")).css("display", "block");
+        $($(e.currentTarget).data("target")).css("display", "flex");
     });
 
-    $(".popup-area").click(() => {
-        $("#add-label").css("display", "none");
-        $("#add-rol").css("display", "none");
-        $("#add-user").css("display", "none");
+    /*start popup-closing */
+    $(".popup-area").click((e) => {
+        $(e.currentTarget).parents(".popups").css("display", "none");
     });
 
-    $(".close").click(() => {
-        $("#add-rol").css("display", "none");
-        $("#add-label").css("display", "none");
-        $("#add-user").css("display", "none");
-
+    $(".close").click((e) => {
+        $(e.currentTarget).parents(".popups").css("display", "none");
     });
 
-    $(".cansel").click(() => {
-        $("#add-rol").css("display", "none");
-        $("#add-label").css("display", "none");
-        $("#add-user").css("display", "none");
+    $(".cansel").click((e) => {
+        $(e.currentTarget).parents(".popups").css("display", "none");
 
     });
+    /*end popup-closing */
 
 
     $('[class*="reason-tag"').click((e) => {
@@ -140,7 +135,7 @@ $(document).ready(() => {
         $(e.currentTarget).append(reportBtn);
 
         $(".report-button").click((e) => {
-            $("#add-label").css("display", "block");
+            $("#add-label").css("display", "flex");
             $(".popup-form").submit(() => {
                 $(e.currentTarget).empty();
                 $(e.currentTarget).removeClass("absent").addClass("pending");
@@ -168,7 +163,7 @@ $(document).ready(() => {
     });
 
     $(".add").click((e) => {
-        $($(e.currentTarget).data("target")).css("display", "block");
+        $($(e.currentTarget).data("target")).css("display", "flex");
     })
 
     $(".check-box").click((e) => {
@@ -207,7 +202,7 @@ $(document).ready(() => {
         $(e.currentTarget).toggleClass("active");
     });
 
-    $(document).on("focus",".faculty-input",(e) => {
+    $(document).on("focus", ".faculty-input", (e) => {
         $(e.currentTarget).css({
             "font-weigh": "bold",
             "background-color": "#fff",
@@ -215,7 +210,7 @@ $(document).ready(() => {
         });
     });
 
-    $(document).on("blur", ".faculty-input",(e) => {
+    $(document).on("blur", ".faculty-input", (e) => {
         $(e.currentTarget).css({
             "font-weigh": "800",
             "background-color": "#00a2ff",
@@ -250,8 +245,24 @@ $(document).ready(() => {
             </ul>
         </div>
     </div>`;
-    $(e.currentTarget).before(card);
+        $(e.currentTarget).before(card);
     });
 
+    $(".fin-info").click((e) => {
+        $($(e.currentTarget).data("target")).css("display", "flex");
+    });
+    $("form").submit((e) => {
+        e.preventDefault();
+        $($(e.currentTarget).data("target")).css("display", "flex");
+    });
+    $(".fin-info").click((e) => {
+        $($(e.currentTarget).data("target")).css("display", "flex");
+    });
+    $(".send-note").click((e) => {
+        e.preventDefault();
+
+        $($(e.currentTarget).attr("href")).css("display", "flex");
+        $("#confirm").css("display", "none");
+    });
 });
 

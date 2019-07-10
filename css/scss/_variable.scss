@@ -1,11 +1,18 @@
 //color
 $text_color: #303030;
 $span_color: #808080;
-$main_color: #00a2ff;
+$main_color: #0050c8;
+$light_main: lighten(
+  $color: $main_color,
+  $amount: 8%
+);
 $bg_color: #f2f2f2;
-$warning:#eb3f3f;
-$success:#00d743;
-$bg_warning:#fff3f3;
-$bg_undefined:#e0e0e0;
-$undefined:#a0a0a0;
-$del_color:#ff386b;
+$warning: #eb3f3f;
+$success: #00d743;
+$bg_warning: #fff3f3;
+$bg_undefined: #e0e0e0;
+$undefined: #a0a0a0;
+$del_color: #ff386b;
+$info_color: #b3b8c1;
+$login_color: #071d42;
+$popup_info:#b3b8c1;

@@ -1,7 +1,12 @@
 .sides {
   .groups {
+    height: 100%;
+    overflow-y: auto;
     position: relative;
-    width: 320px;
+    &::-webkit-scrollbar {
+      width: 0 !important;
+    }
+    width: 430px;
     .btn-list {
       display: flex;
       .group-btn {
@@ -22,7 +27,8 @@
       }
     }
     .groups-list {
-      display: none;
+      min-height: 69%;
+      display: none;  
       &.active-list {
         display: block;
       }
@@ -57,11 +63,11 @@
             display: flex;
             align-items: baseline;
             justify-content: space-evenly;
-            i{
+            i {
               font-size: 11px;
             }
             &:hover {
-              background-color: lighten($color: $main_color, $amount: 8%);
+              background-color: $light_main;
             }
             &.open {
               border: 1px solid #eb3f3f;
@@ -113,13 +119,16 @@
   }
   .attendance {
     width: 100%;
-    padding: 20px 40px;
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    box-sizing: border-box;
+    position: sticky;
     bottom: 0;
+    left:0;
     border-top: solid 1px $bg_color;
     font-weight: 500;
+    background-color: #fff;
   }
 }
 

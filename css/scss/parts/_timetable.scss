@@ -1,13 +1,15 @@
 .sides {
   display: flex;
+  height: 78vh;
+  overflow-y: auto;
 
   .table-side {
     background-color: $bg_color;
     width: 100%;
+    padding:  20px;
     .timetable{
-        margin: 20px;
-        height: 100vh;
         overflow-y: auto;
+        height: 100%;
         &::-webkit-scrollbar {
           width: 0 !important;
         }

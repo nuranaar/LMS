@@ -1,0 +1,314 @@
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  color: $login_color;
+  .page-fon {
+    background-image: url(../img/undraw_to_do_xvvc.jpg);
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .welcome {
+      .title {
+        margin-bottom: 40px;
+        h5 {
+          font-weight: 800;
+          margin: 0;
+          margin-bottom: 8px;
+        }
+        .info {
+          margin: 0;
+          font-size: 16px;
+          font-weight: 600;
+          color: $info_color;
+        }
+      }
+    }
+  }
+}
+.form {
+  margin: auto;
+  width: 370px;
+  text-align: left;
+  .input {
+    color: $login_color;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 16px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    &::placeholder {
+      color: $info-color;
+    }
+    &:focus {
+      border: 1px solid $main_color;
+      outline: none;
+    }
+  }
+  .label {
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: space-between;
+    width: 230px;
+  }
+  .fin-info {
+    width: 100px;
+    img {
+      width: 12px;
+    }
+    position: relative;
+    &::after {
+      opacity: 0;
+      content: "";
+      position: absolute;
+      top: 36%;
+      left: 17%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3px 7px 3px 0;
+      border-color: transparent #071d42 transparent transparent;
+      transition: all 0.3s;
+    }
+    &::before {
+      opacity: 0;
+      content: "Fin kod nedir?";
+      font-size: 8px;
+      font-weight: 500;
+      position: absolute;
+      padding: 5px 14px;
+      top: 0;
+      right: -4%;
+      background-color: #071d42;
+      color: #f0f5fc;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+  .btn-form {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $main_color;
+    border-radius: 5px;
+    background-color: $main_color;
+    color: #fff;
+  }
+  &.input-error {
+    .input {
+      border: 1px solid $del_color;
+    }
+
+    .error-message {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      color: $del_color;
+      list-style: outside;
+      li {
+        margin-left: 30px;
+      }
+    }
+  }
+  .error-message {
+    display: none;
+  }
+}
+#fin-info {
+  .popup {
+    .popup-body {
+      padding: 20px;
+    }
+    width: 570px;
+    .popup-text {
+      font-size: 16px;
+      font-weight: 600;
+      color: $popup_info;
+      padding: 10px;
+    }
+    .examples {
+      display: flex;
+      justify-content: center;
+
+      .ex-img1,
+      .ex-img2 {
+        width: 40%;
+        padding: 10px 20px;
+        img {
+          height: 136px;
+          width: 100%;
+          margin: auto;
+          padding: 10px 20px;
+        }
+        .ex-info {
+          font-size: 6px;
+          font-weight: 600;
+          color: $popup_info;
+        }
+      }
+      .ex-img1 {
+        padding: 10px 0 !important;
+
+        img {
+          padding: 10px 0 !important;
+        }
+      }
+    }
+  }
+}
+#confirm {
+  .popup {
+    width: 570px;
+    color: #505050;
+    .popup-header {
+      font-size: 22px;
+    }
+    .popup-body {
+      .profile-photo {
+        width: 100px;
+        height: 100px;
+        margin: 35px auto;
+        img {
+          width: 100%;
+          border-radius: 100%;
+          box-shadow: 0 0 10px #00000050;
+        }
+      }
+      .user-info-list {
+        .user-info-item {
+          display: flex;
+          height: 35px;
+          align-items: center;
+          .data,
+          .value {
+            width: 38%;
+            font-size: 14px;
+            text-align: left;
+            font-weight: 600;
+          }
+          .data {
+            padding-left: 80px;
+            color: $popup_info;
+          }
+        }
+      }
+      .buttons {
+        .btn {
+          width: 200px;
+          margin: 40px 5px;
+          &.btn-back {
+            color: $main_color;
+            background-color: #fff;
+            border: 1px solid $main_color;
+          }
+          &.btn-confirm {
+            color: #fff;
+            background-color: $main_color;
+            border: 1px solid $main_color;
+          }
+        }
+      }
+      .confirm-note {
+        padding: 0 90px 40px 90px;
+
+        .note-title {
+          font-weight: 800;
+        }
+        .note-info {
+          font-weight: 600;
+          color: $popup_info;
+          .send-note {
+            color: $main_color;
+          }
+        }
+      }
+    }
+  }
+}
+#send-note {
+  .popup {
+    width: 570px;
+    .popup-body {
+      .info {
+        color: $popup_info;
+        padding: 30px 80px;
+      }
+      .form {
+        width: 85%;
+        textarea {
+          padding: 10px 15px;
+          box-sizing: border-box;
+          width: 100%;
+          border: 0.5px solid #dde1e9;
+          border-radius: 5px;
+          &:focus {
+            outline: none;
+          }
+          &::-webkit-scrollbar-track {
+            border-radius: 2px;
+            background-color: #fff;
+          }
+
+          &::-webkit-scrollbar {
+            width: 4px;
+            background-color: #fff;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #dde1e9;
+          }
+        }
+        .btn-form {
+          width: 245px;
+          margin: 20px 0 40px 130px;
+        }
+      }
+    }
+  }
+}
+.container{
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+.thanks {
+  width: 560px;
+  img {
+    width: 100%;
+  }
+  .title {
+    color: $login_color;
+    font-weight: 800;
+    margin-top: 40px;
+  }
+  .info {
+    color: $info_color;
+    padding: 8px;
+  }
+  .enter{
+    width: 230px;
+    color: #fff;
+    background-color: $main_color;
+    margin: 40px;
+  }
+}
+}

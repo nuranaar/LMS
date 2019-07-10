@@ -1,4 +1,6 @@
 main {
+  // $header_height:70px;
+  // height: calc(100%-$header_height);
   .weekly-pagination {
     position: relative;
     background-color: $main_color;
@@ -50,7 +52,7 @@ main {
       font-size: 14px;
       font-weight: bold;
       &:hover {
-        background-color: lighten($color: $main_color, $amount: 8%);
+        background-color: $light_main;
       }
     }
   }

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/grid.css">
+</head>
+
+<body>
+    <main class="container">
+    <div class="login">
+        <div class="page-fon text-center">
+            <div class="welcome">
+                <div class="title">
+                    <h5>Salam, gulsumfm@code.edu.az!</h5>
+                    <p class="info">Email doğrulamasını tamamlamaq üçün, fin kodunuzu daxil edin!
+                    </p>
+                </div>
+                <form class="form input-error" data-target="#confirm">
+                    <div class="label d-flex ">
+                        <label for="email"> Fin kodu daxil edin</label>
+                        <div class="fin-info" data-target="#fin-info">
+                            <img src="../img/icons/info.png">
+                        </div>
+                    </div>
+                    <input type="text" id="email" class="input mt-2 mb-2 " placeholder="Fin">
+                    <ul class="error-message">
+                        <li>
+                            Fin kodunuzu tapılmadı.
+                        </li>
+                    </ul>
+                    <button type="submit" class="btn-form mt-4">Davam et </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- popups -->
+    <div class="popups" id="fin-info">
+        <div class="popup-area"></div>
+        <div class="popup">
+            <div class="close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="popup-header text-center">
+                <p>Fin kod</p>
+            </div>
+            <div class="popup-body">
+                <p class="popup-text">
+                    Şəxsiyyət vəsiqənizin FİN kodu vəsiqənin aşağı sağ küncündə sonuncu rəqəmdən əvvəlki 7 işarədir.
+                    Daha aydın bilməniz üçün nümunə şəkilə diqqət edin!
+                </p>
+                <div class="examples text-center">
+                    <div class="ex-img1">
+                        <img src="../img/kohne shexsiyyet vesiqesi.jpg" alt="kohne shexsiyyet vesiqesi">
+                        <p class="ex-info">Kohne shexsiyyet vesiqesi</p>
+                    </div>
+                    <div class="ex-img2">
+                        <img src="../img/yeni shexsiyyet.jpg" alt="yeni shexsiyyet vesiqesi">
+                        <p class="ex-info">Yeni shexsiyyet vesiqesi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popups" id="confirm">
+        <div class="popup-area"></div>
+        <div class="popup text-center">
+            <div class="popup-header text-center">
+                <p>Hesabınızı təsdiq edin</p>
+            </div>
+            <div class="popup-body">
+                <div class="profile-photo">
+                    <img src="../img/users/user.jpg" alt="user">
+                </div>
+                <ul class="user-info-list">
+                    <li class="user-info-item">
+                        <p class="data">Ad, Soyad, Ata adı:</p>
+                        <p class="value">Gülsüm Məmmədova, Fizuli q</p>
+                    </li>
+                    <li class="user-info-item">
+                        <p class="data">Doğum tarixi:</p>
+                        <p class="value">13.08.1992</p>
+                    </li>
+                    <li class="user-info-item">
+                        <p class="data">Telefon nömrəsi:</p>
+                        <p class="value">0517603182</p>
+                    </li>
+                    <li class="user-info-item">
+                        <p class="data">Email:</p>
+                        <p class="value">gulsumfm@code.edu.az</p>
+                    </li>
+                </ul>
+                <div class="buttons">
+                    <button class="btn btn-back">Geri dön</button>
+                    <button class="btn btn-confirm">Təsdiq et</button>
+                </div>
+                <div class="confirm-note">
+                    <p class="note-title">Məlumata düzəliş et!</p>
+                    <p class="note-info">Əgər şəxsi məlumatda dəyişiklik etmək istəyirsinizsə bizə <a href="#send-note"
+                            class="send-note">bildiriş göndərin.</a> </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="popups" id="send-note" style="display: flex">
+        <div class="popup-area"></div>
+        <div class="popup text-center">
+                <div class="close">
+                        <i class="fas fa-times"></i>
+                    </div>
+            <div class="popup-header text-center">
+                <p>Bildiriş</p>
+            </div>
+            <div class="popup-body">
+                <p class="info">Əgər şəxsi məlumatda dəyişiklik etmək istəyirsinizsə bizə bildiriş göndərin.</p>
+                <form class="form">
+                    <label class="label" for="note">Qeyd</label>
+                    <textarea name="note" id="note" cols="30" rows="5" placeholder="Qeydinizi yazın"></textarea>
+                    <button class="btn-form">Göndər</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="../js/minitoggle.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
