@@ -1,0 +1,67 @@
+#segmentations {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  .title {
+    font-size: 26px;
+    font-weight: 900;
+    color: $login_color;
+    margin-bottom: 64px;
+  }
+  .segments {
+    flex-wrap: nowrap;
+    .segment {
+      width: 200px;
+      height: 230px;
+      border-radius: 4px;
+      box-shadow: $shadow;
+      border: 2px solid #fff;
+      margin: 15px;
+      transition: all 0.3s;
+      .icon {
+        width: 90px;
+        height: 90px;
+        margin: 50px 55px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &.teacher {
+          background-image: url("../../img/Login shekiller zeplin uchun/teacher.png");
+        }
+        &.student {
+          background-image: url("../../img/Login shekiller zeplin uchun/student.png");
+        }
+        &.handshake {
+          background-image: url("../../img/Login shekiller zeplin uchun/handshake.png");
+        }
+        &.key {
+          width: 80px;
+          background-image: url("../../img/Login shekiller zeplin uchun/key.png");
+        }
+      }
+      .segment-title {
+        font-size: 18px;
+        font-weight: 800;
+        color: $login_color;
+      }
+      &:hover {
+        border: 2px solid $main_color;
+        box-shadow: $main_shadow;
+
+        .teacher {
+          background-image: url("../../img/Login shekiller zeplin uchun/teacher blue.png");
+        }
+        .student {
+          background-image: url("../../img/Login shekiller zeplin uchun/student blue.png");
+        }
+        .handshake {
+          background-image: url("../../img/Login shekiller zeplin uchun/handshake blue.png");
+        }
+        .key {
+          background-image: url("../../img/Login shekiller zeplin uchun/key blue.png");
+        }
+      }
+    }
+  }
+}

@@ -55,11 +55,14 @@
       }
     }
     .user-photo {
-      padding-right: 39px;
+      position: relative;
+      padding: 15px;
+      margin: auto;
       .user-pp {
         width: 36px;
         height: 36px;
         border-radius: 100%;
+        border: 2px solid #dde1e9;
       }
     }
   }
