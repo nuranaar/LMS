@@ -2337,20 +2337,20 @@ main .weekly-pagination .btn-this-week:hover {
 }
 
 #segmentations .segments .segment .icon.teacher {
-  background-image: url("../../img/Login shekiller zeplin uchun/teacher.png");
+  background-image: url("../img/loginimg/teacher.png");
 }
 
 #segmentations .segments .segment .icon.student {
-  background-image: url("../../img/Login shekiller zeplin uchun/student.png");
+  background-image: url("../img/loginimg/student.png");
 }
 
 #segmentations .segments .segment .icon.handshake {
-  background-image: url("../../img/Login shekiller zeplin uchun/handshake.png");
+  background-image: url("../img/loginimg/handshake.png");
 }
 
 #segmentations .segments .segment .icon.key {
   width: 80px;
-  background-image: url("../../img/Login shekiller zeplin uchun/key.png");
+  background-image: url("../img/loginimg/key.png");
 }
 
 #segmentations .segments .segment .segment-title {
@@ -2366,18 +2366,18 @@ main .weekly-pagination .btn-this-week:hover {
 }
 
 #segmentations .segments .segment:hover .teacher {
-  background-image: url("../../img/Login shekiller zeplin uchun/teacher blue.png");
+  background-image: url("../img/loginimg/teacher blue.png");
 }
 
 #segmentations .segments .segment:hover .student {
-  background-image: url("../../img/Login shekiller zeplin uchun/student blue.png");
+  background-image: url("../img/loginimg/student blue.png");
 }
 
 #segmentations .segments .segment:hover .handshake {
-  background-image: url("../../img/Login shekiller zeplin uchun/handshake blue.png");
+  background-image: url("../img/loginimg/handshake blue.png");
 }
 
 #segmentations .segments .segment:hover .key {
-  background-image: url("../../img/Login shekiller zeplin uchun/key blue.png");
+  background-image: url("../img/loginimg/key blue.png");
 }
 /*# sourceMappingURL=style.css.map */
