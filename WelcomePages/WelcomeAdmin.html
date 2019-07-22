@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <img class="header-gradient" src="../img/loginimg/gradient.jpg" alt="">
+    <header class="header">
+        <div class="col-2 head-left">
+            <div class="logo">
+                <img class="CA-Copy" src="../img/code_logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="col-2 head-right">
+            <!-- adminde gorsenmir -->
+            <div class="search">
+                <a href="#">
+                    <i class="far fa-question-circle"></i>
+                </a>
+            </div>
+            <div class="notification active">
+                <a href="#noti">
+                    <i class="far fa-bell"></i>
+                </a>
+            </div>
+            <div class="user-photo">
+                <a href="#">
+                    <img src="../img/users/user.jpg" class="user-pp" alt="user">
+                </a>
+                <div id="logout">
+                    <div class="user d-flex  align-items-center">
+                        <img src="../img/users/user.jpg" class="photo" alt="user">
+                        <div class="user-info">
+                            <p class="fullname p-1">Vüqar Əli</p>
+                            <p class="email p-1">vuqar@code.edu.az</p>
+                            <p class="position p-1">Admin
+
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="segments">
+                        <li class="segment d-flex align-items-center">
+                            <div class="icon">
+                                <img src="../img/loginimg/edit.png" alt="">
+                            </div>
+                            <div class="segment-title"><a href="#"> Hesabını redaktə et</a></div>
+                        </li>
+                        <li class="segment d-flex align-items-center">
+                            <div class="icon">
+                                <img src="../img/loginimg/handshake 2.png" alt="">
+                            </div>
+                            <div class="segment-title"><a href="#"> Menecer hesabım</a></div>
+                        </li>
+                        <li class="segment d-flex align-items-center">
+                            <div class="icon">
+                                <img src="../img/loginimg/Shape.png" alt="">
+                            </div>
+                            <div class="segment-title"><a href="#"> Tələbə hesabım</a></div>
+                        </li>
+                    </ul>
+                    <button class="btn logout">Hesabdan çıxış</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="admin">
+        <section class="container" id="welcome">
+            <img src="../img/admin-welcome-bg.jpg" alt="">
+            <div class="welcome-text pl-5">
+                <p class="title">Salam, Admin!</p>
+                <p class="info">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a gal</p>
+            </div>
+        </section>
+        <section class="container" id="menu">
+            <div class="menu-cards row">
+                <!-- admin -->
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/profil.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Profil</div>
+                            <div class="info">Profilinə daxil olaraq şəxsi məlumatlarına baxa bilərsən.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/istifadechiler.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Istifadəçilər</div>
+                            <div class="info">İstifadəçiləri görmək üçün daxil ol.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/rollar.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Rollar</div>
+                            <div class="info">Təyin olunmuş rollar üçün giriş et.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/imtiyazlar.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Imtiyazlar</div>
+                            <div class="info">Ayrılmış imtiyazlar üçün daxil ol.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /admin -->
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4"></div>
+                <!-- manager -->
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/profil.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Profil</div>
+                            <div class="info">Profilinə daxil olaraq şəxsi məlumatlarına baxa bilərsən.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/muellimler.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Müəllimlər</div>
+                            <div class="info">Müəllimlər haqda məlumat almaq üçün.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/dersler.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Dərslər</div>
+                            <div class="info">Dərslərin planı, davamiyyəti, quizlər, tapşırıqları və bitirmə
+                                layihələrini görmək üçün Dərslərə giriş et.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/odenishler.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Ödənişlər</div>
+                            <div class="info">Ödənişlər haqda məlumat almaq üçün daxil ol.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/faq.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">FAQ</div>
+                            <div class="info">Tez-tez verilən sualları və onların cavablarını görmək üçün FAQ-a daxil
+                                ol.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/helpdesk.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Helpdesk</div>
+                            <div class="info">Kompyuterin proqramını yeniləmək və ya texniki məsələni bildirmək üçün
+                                Helpdesk-ə yaz.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/nece edim.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Necə edim?</div>
+                            <div class="info">Hansı əməliyyatı necə etməli olduğunu öyrənmək üçün Necə Edim?-ə daxil ol.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /manager -->
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4"></div>
+                <!--teacher -->
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/profil.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Profil</div>
+                            <div class="info">Profilinə daxil olaraq şəxsi məlumatlarına baxa bilərsən.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/dersler.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Dərslər</div>
+                            <div class="info">Dərs planı, davamiyyəti, quizlər, tapşırıqları və bitirmə layihələrini
+                                görmək üçün Dərslərə giriş et.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/odenishler.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Ödənişlər</div>
+                            <div class="info">Ödənişlər haqda məlumat almaq üçün daxil ol.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/faq.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">FAQ</div>
+                            <div class="info">Tez-tez verilən sualları və onların cavablarını görmək üçün FAQ-a daxil
+                                ol.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/helpdesk.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Helpdesk</div>
+                            <div class="info">Kompyuterin proqramını yeniləmək və ya texniki məsələni bildirmək üçün
+                                Helpdesk-ə yaz.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/nece edim.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Necə edim?</div>
+                            <div class="info">Hansı əməliyyatı necə etməli olduğunu öyrənmək üçün Necə Edim?-ə daxil ol.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/teacher-->
+
+                <!-- student -->
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/profil.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Profil</div>
+                            <div class="info">Profilinə daxil olaraq şəxsi məlumatlarına baxa bilərsən.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/dersler.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Dərslər</div>
+                            <div class="info">Dərləsimə girərək Code Academy-dəki dərs davamiyyətinə baxa bilərsən.
+                                Etmiş olduğun tapşırıqları bu səhifəyə daxil olaraq göndərə bilərsən.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/odenishler.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Ödənişlər</div>
+                            <div class="info">Ödənişlər haqda məlumat almaq üçün daxil ol.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/faq.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">FAQ</div>
+                            <div class="info">Tez-tez verilən sualları və onların cavablarını görmək üçün FAQ-a daxil
+                                ol.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/helpdesk.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Helpdesk</div>
+                            <div class="info">Kompyuterin proqramını yeniləmək və ya texniki məsələni bildirmək üçün
+                                Helpdesk-ə yaz.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card d-flex justify-content-start align-items-center">
+                        <div class="icon"><img src="../img/icons/nece edim.png" alt=""></div>
+                        <div class="card-desc">
+                            <div class="title">Necə edim?</div>
+                            <div class="info">Hansı əməliyyatı necə etməli olduğunu öyrənmək üçün Necə Edim?-ə daxil ol.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /student -->
+            </div>
+        </section>
+
+    </main>
+    <footer class="container">
+        <div class="row align-items-center p-5">
+
+            <div class="col-lg-5 copywriter">
+                © 2015 - 2019. Code Academy — Bütün hüquqlar qorunur.
+            </div>
+            <div class="col-lg-3">
+                <div class="logo">
+                    <img class="CA-Copy" src="../img/code_logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <ul class="link-list">
+                    <li class="link-item"><a href="#"><img src="../img/icons/facebook-logo.png" alt=""></a></li>
+                    <li class="link-item"><a href="#"><img src="../img/icons/twitter.png" alt=""></a></li>
+                    <li class="link-item"><a href="#"><img src="../img/icons/instagram.png" alt=""></a></li>
+                    <li class="link-item"><a href="#"><img src="../img/icons/linkedin.png" alt=""></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

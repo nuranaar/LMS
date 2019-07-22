@@ -1,68 +1,47 @@
 .header {
   display: flex;
-
+  align-items: center;
   .head-left {
     .logo {
       padding: 19px 41px;
       .CA-Copy {
-        width: 133.6px;
-        height: 32.2px;
+        width: 177px;
+        height: 43px;
       }
     }
   }
   .head-right {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
     margin-left: auto;
-    .search {
-      padding: 0 3px;
-      .magnify {
-        width: 18px;
-        height: 18px;
-      }
+    i {
+      font-size: 22px;
+      padding: 18px;
     }
     .notification {
-      padding: 0 27px;
       position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        top: -8px;
-        right: 0;
-        width: 2px;
-        height: 40px;
-        background-color: #97979714;
-      }
-      .open-noti {
-        &.active {
-          &::after {
-            content: "";
-            position: absolute;
-            top: -3px;
-            right: 24px;
-            background-color: $warning;
-            width: 10px;
-            height: 10px;
-            border-radius: 100%;
-            border: 2px solid #fff;
-          }
+      &.active {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 13px;
+          right: 16px;
+          background-color: $warning;
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          border: 2px solid #fff;
         }
-      }
-      .bell-outline {
-        width: 17px;
-        height: 20px;
       }
     }
     .user-photo {
       position: relative;
-      padding: 15px;
-      margin: auto;
+      padding: 30px 18px;
       .user-pp {
-        width: 36px;
-        height: 36px;
+        width: 46px;
+        height: 46px;
         border-radius: 100%;
-        border: 2px solid #dde1e9;
       }
     }
   }
