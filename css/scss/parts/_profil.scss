@@ -1,0 +1,48 @@
+nav {
+  .menu-bar {
+    position: sticky;
+    height: 100vh;
+    box-shadow: $shadow;
+    .logo {
+      padding: 20px 30px;
+      img {
+        width: 58%;
+      }
+    }
+    .nav-list {
+      .nav-item {
+        .icon {
+          width: 25px;
+          height: 25px;
+          padding: 20px 30px;
+          img {
+            height: 25px;
+          }
+        }
+        .nav-text {
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+.page-body {
+  background-color: $bg_color;
+  .header {
+    background-color: #fff;
+    max-height: 80px;
+    .head-right {
+      .user-photo {
+        padding: 18px;
+      }
+    }
+  }
+  .profile-datas {
+      background-color: #fff;
+      border-radius: 6px;
+      height: 100vh;
+      margin: 30px;
+
+  }
+}

@@ -88,7 +88,87 @@ hr {
   background-color: #fafafa;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   font-family: "VisbyCF";
   -webkit-font-variant-ligatures: no-common-ligatures !important;
           font-variant-ligatures: no-common-ligatures !important;
@@ -195,7 +275,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 #noti .noti-box .list .list-item {
-  border-bottom: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f8f8f8;
   width: 326px;
   font-size: 14px;
   padding: 0 5px;
@@ -557,7 +637,7 @@ main .weekly-pagination .btn-this-week:hover {
   width: 160px;
   height: 35px;
   border: none;
-  border-bottom: 0.5px solid #f2f2f2;
+  border-bottom: 0.5px solid #f8f8f8;
   background-color: #fff;
   color: #b2b2b2;
   font-size: 12px;
@@ -595,7 +675,7 @@ main .weekly-pagination .btn-this-week:hover {
 }
 
 .sides .groups .groups-list .groups-item .group {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f8f8f8;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -701,7 +781,7 @@ main .weekly-pagination .btn-this-week:hover {
   position: sticky;
   bottom: 0;
   left: 0;
-  border-top: solid 1px #f2f2f2;
+  border-top: solid 1px #f8f8f8;
   font-weight: 500;
   background-color: #fff;
 }
@@ -720,7 +800,7 @@ main .weekly-pagination .btn-this-week:hover {
 }
 
 .sides .table-side {
-  background-color: #f2f2f2;
+  background-color: #f8f8f8;
   width: 100%;
   padding: 20px;
 }
@@ -902,7 +982,7 @@ main .weekly-pagination .btn-this-week:hover {
 .Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td.ParticipationTable__Current__1bTw4 [class*="ParticipationOptions"] [class*="reason-dropdown"] [class*="reasons"] [class*="reason"]:first-child {
   width: 70px;
   margin: auto;
-  border-bottom: solid 2px #f2f2f2;
+  border-bottom: solid 2px #f8f8f8;
   cursor: default;
 }
 
@@ -929,8 +1009,8 @@ main .weekly-pagination .btn-this-week:hover {
 
 .Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr td,
 .Teacher__GroupsWrapper__3ToYy .ParticipationTable__ParticipationTable__NzBVH table tr th {
-  border-left: 2px solid #f2f2f2;
-  border-bottom: 2px solid #f2f2f2;
+  border-left: 2px solid #f8f8f8;
+  border-bottom: 2px solid #f8f8f8;
   width: 150px;
   line-height: 50px;
 }
@@ -960,7 +1040,7 @@ main .weekly-pagination .btn-this-week:hover {
   border-radius: 5px;
   -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.08);
           box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.08);
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f8f8f8;
   padding: 20px;
 }
 
@@ -1018,7 +1098,7 @@ main .weekly-pagination .btn-this-week:hover {
 
 #student .table-side .timetable table td .visit.today {
   background-color: #fff;
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid #f8f8f8;
 }
 
 #student .table-side .timetable table td .visit.absent {
@@ -1434,7 +1514,7 @@ main .weekly-pagination .btn-this-week:hover {
   text-align: left;
   width: 70px;
   margin: auto;
-  border-bottom: solid 2px #f2f2f2;
+  border-bottom: solid 2px #f8f8f8;
   cursor: default;
 }
 
@@ -1466,7 +1546,7 @@ main .weekly-pagination .btn-this-week:hover {
 }
 
 #admin {
-  background-color: #f2f2f2;
+  background-color: #f8f8f8;
   padding-bottom: 10px;
 }
 
@@ -2229,7 +2309,7 @@ main .weekly-pagination .btn-this-week:hover {
 }
 
 #logout .user {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f8f8f8;
 }
 
 #logout .user .photo {
@@ -2256,7 +2336,7 @@ main .weekly-pagination .btn-this-week:hover {
 }
 
 #logout .segments .segment {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f8f8f8;
 }
 
 #logout .segments .segment .icon {
@@ -2490,7 +2570,7 @@ main .weekly-pagination .btn-this-week:hover {
 }
 
 footer {
-  background-color: #f2f2f2;
+  background-color: #f8f8f8;
 }
 
 footer .copywriter {
@@ -2523,5 +2603,56 @@ footer .link-list .link-item {
 
 footer .link-list .link-item img {
   height: 100%;
+}
+
+nav .menu-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  height: 100vh;
+  -webkit-box-shadow: 0 0 10px 0 #99a9be37;
+          box-shadow: 0 0 10px 0 #99a9be37;
+}
+
+nav .menu-bar .logo {
+  padding: 20px 30px;
+}
+
+nav .menu-bar .logo img {
+  width: 58%;
+}
+
+nav .menu-bar .nav-list .nav-item .icon {
+  width: 25px;
+  height: 25px;
+  padding: 20px 30px;
+}
+
+nav .menu-bar .nav-list .nav-item .icon img {
+  height: 25px;
+}
+
+nav .menu-bar .nav-list .nav-item .nav-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.page-body {
+  background-color: #f8f8f8;
+}
+
+.page-body .header {
+  background-color: #fff;
+  max-height: 80px;
+}
+
+.page-body .header .head-right .user-photo {
+  padding: 18px;
+}
+
+.page-body .profile-datas {
+  background-color: #fff;
+  border-radius: 6px;
+  height: 100vh;
+  margin: 30px;
 }
 /*# sourceMappingURL=style.css.map */
