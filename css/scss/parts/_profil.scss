@@ -1,16 +1,36 @@
 nav {
   .menu-bar {
     position: sticky;
-    height: 100vh;
+    height: calc(100vh - 18px);
     box-shadow: $shadow;
     .logo {
       padding: 20px 30px;
       img {
-        width: 58%;
+        width: 120px;
       }
     }
     .nav-list {
       .nav-item {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 4px;
+            height: 0;
+            background-color: $main_color;
+            border-radius: 2px;
+            transition: all .2s;
+          }
+        &.active {
+            background-color: #fafafa;
+          &::after {
+              top:0;
+            height: 100%;
+          }
+        }
         .icon {
           width: 25px;
           height: 25px;
@@ -38,11 +58,17 @@ nav {
       }
     }
   }
-  .profile-datas {
-      background-color: #fff;
-      border-radius: 6px;
-      height: 100vh;
-      margin: 30px;
-
+  .profile {
+    background-color: #fff;
+    border-radius: 6px;
+    height: calc(100vh - 158px);
+    margin: 30px;
+    box-shadow: $shadow;
+    .title {
+      padding: 30px;
+      border-bottom: 2px solid darken($color: $bg_color, $amount: 2.5%);
+      font-size: 18px;
+      font-weight: 900;
+    }
   }
 }

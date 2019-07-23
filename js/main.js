@@ -264,5 +264,6 @@ $(document).ready(() => {
         $($(e.currentTarget).attr("href")).css("display", "flex");
         $("#confirm").css("display", "none");
     });
+    
 });
 

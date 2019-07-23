@@ -88,87 +88,7 @@ hr {
   background-color: #fafafa;
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   font-family: "VisbyCF";
   -webkit-font-variant-ligatures: no-common-ligatures !important;
           font-variant-ligatures: no-common-ligatures !important;
@@ -2608,7 +2528,7 @@ footer .link-list .link-item img {
 nav .menu-bar {
   position: -webkit-sticky;
   position: sticky;
-  height: 100vh;
+  height: calc(100vh - 18px);
   -webkit-box-shadow: 0 0 10px 0 #99a9be37;
           box-shadow: 0 0 10px 0 #99a9be37;
 }
@@ -2618,7 +2538,33 @@ nav .menu-bar .logo {
 }
 
 nav .menu-bar .logo img {
-  width: 58%;
+  width: 120px;
+}
+
+nav .menu-bar .nav-list .nav-item {
+  position: relative;
+}
+
+nav .menu-bar .nav-list .nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 4px;
+  height: 0;
+  background-color: #0286cd;
+  border-radius: 2px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+nav .menu-bar .nav-list .nav-item.active {
+  background-color: #fafafa;
+}
+
+nav .menu-bar .nav-list .nav-item.active::after {
+  top: 0;
+  height: 100%;
 }
 
 nav .menu-bar .nav-list .nav-item .icon {
@@ -2649,10 +2595,19 @@ nav .menu-bar .nav-list .nav-item .nav-text {
   padding: 18px;
 }
 
-.page-body .profile-datas {
+.page-body .profile {
   background-color: #fff;
   border-radius: 6px;
-  height: 100vh;
+  height: calc(100vh - 158px);
   margin: 30px;
+  -webkit-box-shadow: 0 0 10px 0 #99a9be37;
+          box-shadow: 0 0 10px 0 #99a9be37;
+}
+
+.page-body .profile .title {
+  padding: 30px;
+  border-bottom: 2px solid #f2f2f2;
+  font-size: 18px;
+  font-weight: 900;
 }
 /*# sourceMappingURL=style.css.map */
