@@ -15,125 +15,263 @@
 <body>
     <img class="header-gradient" src="../img/loginimg/gradient.jpg" alt="">
     <div class="row flex-nowrap">
-        <nav class="col-lg-2">
-            <div class="menu-bar">
-                <div class="logo mb-6">
-                    <img class="CA-Copy" src="../img/code_logo.png" alt="logo">
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item active d-flex align-items-center justify-content-start ">
-                        <div class="icon"><img src="../img/menubar-icons/home.png" alt=""></div>
-                        <a href="#">
-                            <p class="nav-text">Əsas səhifə</p>
-                        </a>
-                    </li>
-                    <li class="nav-item  d-flex align-items-center justify-content-start ">
-                        <div class="icon"><img src="../img/menubar-icons/profil.png" alt=""></div>
-                        <a href="#">
-                            <p class="nav-text">Profil</p>
-                        </a>
-                    </li>
-                    <li class="nav-item  d-flex align-items-center justify-content-start ">
-                        <div class="icon"><img src="../img/menubar-icons/dersler.png" alt=""></div>
-                        <a href="#">
-                            <p class="nav-text">Dərslər</p>
-                        </a>
-                    </li>
-                    <li class="nav-item  d-flex align-items-center justify-content-start ">
-                        <div class="icon"><img src="../img/menubar-icons/odenishler.png" alt=""></div>
-                        <a href="#">
-                            <p class="nav-text">Ödənişlər</p>
-                        </a>
-                    </li>
-                    <li class="nav-item  d-flex align-items-center justify-content-start ">
-                        <div class="icon"><img src="../img/menubar-icons/faq.png" alt=""></div>
-                        <a href="#">
-                            <p class="nav-text">FAQ</p>
-                        </a>
-                    </li>
-                    <li class="nav-item  d-flex align-items-center justify-content-start ">
-                        <div class="icon"><img src="../img/menubar-icons/helpdesk.png" alt=""></div>
-                        <a href="#">
-                            <p class="nav-text">Helpdesk</p>
-                        </a>
-                    </li>
-                </ul>
+        <nav class=" menu-bar">
+            <!-- <div class="menu-bar"> -->
+            <div class="logo mb-6">
+                <img class="CA-Copy" src="../img/code_logo.png" alt="logo">
             </div>
+            <div class="open-menubar">
+                <img src="../img/icons/Hover.png" alt="">
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item  d-flex align-items-center justify-content-start ">
+                    <div class="icon"><img src="../img/menubar-icons/home.png" alt=""></div>
+                    <a href="#">
+                        <p class="nav-text">Əsas səhifə</p>
+                    </a>
+                </li>
+                <li class="nav-item active d-flex align-items-center justify-content-start ">
+                    <div class="icon"><img src="../img/menubar-icons/profil.png" alt=""></div>
+                    <a href="#">
+                        <p class="nav-text">Profil</p>
+                    </a>
+                </li>
+                <li class="nav-item  d-flex align-items-center justify-content-start ">
+                    <div class="icon"><img src="../img/menubar-icons/dersler.png" alt=""></div>
+                    <a href="#">
+                        <p class="nav-text">Dərslər</p>
+                    </a>
+                </li>
+                <li class="nav-item  d-flex align-items-center justify-content-start ">
+                    <div class="icon"><img src="../img/menubar-icons/odenishler.png" alt=""></div>
+                    <a href="#">
+                        <p class="nav-text">Ödənişlər</p>
+                    </a>
+                </li>
+                <li class="nav-item  d-flex align-items-center justify-content-start ">
+                    <div class="icon"><img src="../img/menubar-icons/faq.png" alt=""></div>
+                    <a href="#">
+                        <p class="nav-text">FAQ</p>
+                    </a>
+                </li>
+                <li class="nav-item  d-flex align-items-center justify-content-start ">
+                    <div class="icon"><img src="../img/menubar-icons/helpdesk.png" alt=""></div>
+                    <a href="#">
+                        <p class="nav-text">Helpdesk</p>
+                    </a>
+                </li>
+            </ul>
+            <!-- </div> -->
         </nav>
-        <main class="col-lg-10 w-100 page-body">
-            <div class="row">
-                <header class="col-lg-12 header">
-                    <div class="head-right">
-                        <!-- adminde gorsenmir -->
-                        <div class="search">
-                            <a href="#">
-                                <i class="far fa-question-circle"></i>
-                            </a>
-                        </div>
-                        <!-- / -->
-                        <div class="notification active">
-                            <a href="#noti">
-                                <i class="far fa-bell"></i>
-                            </a>
-                        </div>
-                        <div class="user-photo">
-                            <a href="#">
-                                <img src="../img/users/user.jpg" class="user-pp" alt="user">
-                            </a>
-                            <div id="logout">
-                                <div class="user d-flex  align-items-center">
-                                    <img src="../img/users/user.jpg" class="photo" alt="user">
-                                    <div class="user-info">
-                                        <p class="fullname p-1">Vüqar Əli</p>
-                                        <p class="email p-1">vuqar@code.edu.az</p>
-                                        <p class="position p-1">Admin
+        <main class="col-lg-12  w-100">
+            <header class="col-lg-12 header">
+                <div class="head-right">
+                    <!-- adminde gorsenmir -->
+                    <div class="search">
+                        <a href="#">
+                            <i class="far fa-question-circle"></i>
+                        </a>
+                    </div>
+                    <!-- / -->
+                    <div class="notification active">
+                        <a href="#noti">
+                            <i class="far fa-bell"></i>
+                        </a>
+                    </div>
+                    <div class="user-photo">
+                        <a href="#">
+                            <img src="../img/users/user.jpg" class="user-pp" alt="user">
+                        </a>
+                        <div id="logout">
+                            <div class="user d-flex  align-items-center">
+                                <img src="../img/users/user.jpg" class="photo" alt="user">
+                                <div class="user-info">
+                                    <p class="fullname p-1">Vüqar Əli</p>
+                                    <p class="email p-1">vuqar@code.edu.az</p>
+                                    <p class="position p-1">Admin
 
-                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="segments">
+                                <li class="segment d-flex align-items-center">
+                                    <div class="icon">
+                                        <img src="../img/loginimg/edit.png" alt="">
+                                    </div>
+                                    <div class="segment-title"><a href="#"> Hesabını redaktə et</a></div>
+                                </li>
+                                <li class="segment d-flex align-items-center">
+                                    <div class="icon">
+                                        <img src="../img/loginimg/handshake 2.png" alt="">
+                                    </div>
+                                    <div class="segment-title"><a href="#"> Menecer hesabım</a></div>
+                                </li>
+                                <li class="segment d-flex align-items-center">
+                                    <div class="icon">
+                                        <img src="../img/loginimg/Shape.png" alt="">
+                                    </div>
+                                    <div class="segment-title"><a href="#"> Tələbə hesabım</a></div>
+                                </li>
+                            </ul>
+                            <button class="btn logout">Hesabdan çıxış</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page-body">
+                <div class="col-lg-12">
+                    <div class="body" id="profile">
+                        <div class="body-head d-flex justify-content-between">
+                            <p class="title">Şəxsi məlumat</p>
+                            <a class="btn btn-edit " href="#profile-edit"><img src="../img/menubar-icons/edit.png"
+                                    alt="">Redaktə
+                                et</a>
+                        </div>
+                        <div class="datas mt-6 pb-6">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="photo">
+                                        <img class="user-photo" src="../img/users/user.jpg" alt="">
                                     </div>
                                 </div>
-                                <ul class="segments">
-                                    <li class="segment d-flex align-items-center">
-                                        <div class="icon">
-                                            <img src="../img/loginimg/edit.png" alt="">
-                                        </div>
-                                        <div class="segment-title"><a href="#"> Hesabını redaktə et</a></div>
-                                    </li>
-                                    <li class="segment d-flex align-items-center">
-                                        <div class="icon">
-                                            <img src="../img/loginimg/handshake 2.png" alt="">
-                                        </div>
-                                        <div class="segment-title"><a href="#"> Menecer hesabım</a></div>
-                                    </li>
-                                    <li class="segment d-flex align-items-center">
-                                        <div class="icon">
-                                            <img src="../img/loginimg/Shape.png" alt="">
-                                        </div>
-                                        <div class="segment-title"><a href="#"> Tələbə hesabım</a></div>
-                                    </li>
-                                </ul>
-                                <button class="btn logout">Hesabdan çıxış</button>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <p class="label">Ad</p>
+                                        <p class="input">Gülsüm</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Soyad</p>
+                                        <p class="input">Məmmədova</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Ata adı</p>
+                                        <p class="input">Fizuli</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Doğum tarixi</p>
+                                        <p class="input">13 avqust 1992</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Email</p>
+                                        <p class="input">gulsumfm@code.edu.az</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Telefon nömrəsi</p>
+                                        <p class="input">051-760-31-81</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Yaşadığı ünvan</p>
+                                        <p class="input">Bakı şəh., Nərimanov ray., Heydər Əliyev pr. 76, mən. 19</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </header>
-                <div class="col-lg-12">
-                    <div class="profile">
-                        <div class="title">Şəxsi məlumat</div>
-                        <div class="datas">
-                            <div class="row">
-                                
-                            </div>
+                    <div class="body" id="profile-edit">
+                        <div class="body-head d-flex justify-content-between">
+                            <p class="title">Şəxsi məlumat</p>
+
                         </div>
+                        <form class="datas mt-6 pb-6">
+                            <div class="row">
+                                <div class="col-lg-3 text-center">
+                                    <label for="photo">
+                                        <div class="photo">
+                                            <img class="user-photo" src="../img/users/user.jpg" alt="">
+                                            <img class="change-label" src="../img/menubar-icons/change photo.png"
+                                                alt="">
+                                        </div>
+                                    </label>
+                                    <input type="file" id="photo" style="display: none">
+                                    <a class="btn btn-del-photo" href="#">Profil şəklini sil</a>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <label class="label">Ad</label>
+                                        <input class="input input-error" value="Gülsüm">
+                                        <p class="error-message">
+                                            Adinizi daxil edin.
+                                        </p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Soyad</label>
+                                        <input class="input" value="Məmmədova">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Ata adı</label>
+                                        <input class="input" value="Fizuli">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Doğum tarixi</label>
+                                        <input class="input" value="13 avqust 1992">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Email</label>
+                                        <input class="input" disabled value="gulsumfm@code.edu.az">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Telefon nömrəsi</label>
+                                        <div class="input phone-input">
+                                            <select name="operator">
+                                                <option value="050">050</option>
+                                                <option value="051">051</option>
+                                                <option value="055">055</option>
+                                                <option value="070">070</option>
+                                                <option value="077">077</option>
+                                                <option value="012">012</option>
+                                            </select>
+                                            <input value="760-31-81">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Yaşadığı ünvan</label>
+                                        <input class="input"
+                                            value="Bakı şəh., Nərimanov ray., Heydər Əliyev pr. 76, mən. 19">
+                                    </div>
+                                    <div class="form-btn">
+                                        <button class="btn btn-cancel">Ləğv et</button>
+                                        <button class="btn btn-send send-note" data-target="#send-note">Dəyişikliyi
+                                            göndər</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </main>
 
+        <!-- popuups -->
+        <div class="popups" id="send-note">
+            <div class="popup-area"></div>
+            <div class="popup">
+                <div class="close">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="popup-header text-center">
+                    <p>Səbəb</p>
+                </div>
+                <div class="popup-body">
+                    <p class="info">Şəxsi məlumatda etdiyiniz dəyişikliklə bağlı bizə səbəb yazin.</p>
+                    <form class="form">
+                        <label class="label" for="note">Səbəb</label>
+                        <textarea name="note" id="note" cols="30" rows="5" placeholder="Qeydinizi yazın"></textarea>
+                        <div class="buttons">
+                            <button class="btn btn-back">Ləğv et</button>
+                            <button class="btn btn-confirm">Göndər</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="../js/minitoggle.js"></script>
+    <script src="../js/main.js"></script>
     <script src="../js/menubar.js"></script>
 
 </body>

@@ -105,35 +105,7 @@
     background-color: $main_color;
     color: #fff;
   }
-  &.input-error {
-    .input {
-      border: 1px solid $warning;
-    }
-
-    .error-message {
-      display: block;
-      font-size: 12px;
-      font-weight: 500;
-      color: $warning;
-      list-style: outside;
-      position: relative;
-      padding-left: 11px;
-      &::after {
-        content: "";
-        position: absolute;
-        font-family: "Font Awesome 5 Free";
-        background-color: $warning;
-        width: 4px;
-        height: 4px;
-        top: 4px;
-        left: 0;
-        border-radius: 100%;
-      }
-    }
-  }
-  .error-message {
-    display: none;
-  }
+  
 }
 #fin-info {
   .popup {
@@ -252,7 +224,7 @@
     .popup-body {
       .info {
         color: $popup_info;
-        padding: 30px 80px;
+        padding: 30px 40px;
       }
       .form {
         width: 85%;

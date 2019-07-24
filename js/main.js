@@ -260,8 +260,8 @@ $(document).ready(() => {
     });
     $(".send-note").click((e) => {
         e.preventDefault();
-
         $($(e.currentTarget).attr("href")).css("display", "flex");
+        $($(e.currentTarget).data("target")).css("display", "flex");
         $("#confirm").css("display", "none");
     });
     
