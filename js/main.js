@@ -103,6 +103,9 @@ $(document).ready(() => {
     $(".close").click((e) => {
         $(e.currentTarget).parents(".popups").css("display", "none");
     });
+    $(".btn-close").click((e) => {
+        $(e.currentTarget).parents(".popups").css("display", "none");
+    });
 
     $(".cansel").click((e) => {
         $(e.currentTarget).parents(".popups").css("display", "none");
@@ -264,6 +267,10 @@ $(document).ready(() => {
         $($(e.currentTarget).data("target")).css("display", "flex");
         $("#confirm").css("display", "none");
     });
-    
+    $("#send-note .btn-confirm").click(function(e){
+        e.preventDefault();
+        $($(e.currentTarget).data("target")).css("display", "flex");
+        $("#send-note").css("display", "none");
+    })
 });
 

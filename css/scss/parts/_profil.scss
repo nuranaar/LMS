@@ -235,12 +235,12 @@ nav {
             }
           }
           &.input-error {
-            margin-bottom: 12px;
+            margin-bottom: 38px;
           }
         }
         .error-message {
           position: absolute;
-          bottom: 0;
+          bottom: 20px;
           left: 256px;
         }
       }
@@ -268,12 +268,20 @@ nav {
   }
 }
 #send-note {
+  .form{
+    textarea:focus{
+      .btn-back{
+        visibility: visible;
+      }
+    }
+  }
   .buttons {
     margin: 40px 0;
     margin-left: 118px;
     .btn {
       width: 200px;
       &.btn-back {
+        visibility: hidden;
         width: 160px;
         border: 1px solid $main_color;
         background: #fff;
@@ -285,6 +293,33 @@ nav {
         color: #fff;
         background-color: $main_color;
         border: 1px solid $main_color;
+      }
+    }
+  }
+}
+#thanks-popup {
+  .popup {
+    width: 540px;
+    text-align: center;
+    .popup-body {
+      .image {
+        padding: 40px 0;
+        img {
+          width: 300px;
+        }
+      }
+      .info {
+        color: $undefined;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .btn-close {
+        margin: 36px;
+        background-color: $main_color;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        width: 200px;
       }
     }
   }

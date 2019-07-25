@@ -160,6 +160,10 @@
                                         <p class="input">051-760-31-81</p>
                                     </div>
                                     <div class="form-group">
+                                        <p class="label">Proqram</p>
+                                        <p class="input">Qrafik və Veb dizayn</p>
+                                    </div>
+                                    <div class="form-group">
                                         <p class="label">Yaşadığı ünvan</p>
                                         <p class="input">Bakı şəh., Nərimanov ray., Heydər Əliyev pr. 76, mən. 19</p>
                                     </div>
@@ -222,7 +226,10 @@
                                             </select>
                                             <input value="760-31-81">
                                         </div>
-
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Proqram</label>
+                                        <input class="input" disabled value="Qrafik və Veb dizayn">
                                     </div>
                                     <div class="form-group">
                                         <label class="label">Yaşadığı ünvan</label>
@@ -233,6 +240,8 @@
                                         <button class="btn btn-cancel">Ləğv et</button>
                                         <button class="btn btn-send send-note" data-target="#send-note">Dəyişikliyi
                                             göndər</button>
+                                        <!-- menegerde ve aminde btn texti "yadda saxla", "send-note" popupi acilmadan, "thanks-popup" acilacaq-->
+
                                     </div>
                                 </div>
                             </div>
@@ -259,12 +268,25 @@
                         <textarea name="note" id="note" cols="30" rows="5" placeholder="Qeydinizi yazın"></textarea>
                         <div class="buttons">
                             <button class="btn btn-back">Ləğv et</button>
-                            <button class="btn btn-confirm">Göndər</button>
+                            <button class="btn btn-confirm" data-target="#thanks-popup">Göndər</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+        <div class="popups" id="thanks-popup">
+            <div class="popup-area"></div>
+            <div class="popup">
+                <div class="popup-body">
+                    <div class="image text-center">
+                        <img src="../img/loginimg/thanks image.jpg" alt="">
+                    </div>
+                    <p class="info">Etdiyiniz dəyişikliklə bağlı qısa zamanda sizə məlumat gələcək.</p>
+                    <button class="btn btn-close">Göndər</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
