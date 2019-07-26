@@ -2967,10 +2967,6 @@ nav.menu-bar .nav-list .nav-item .nav-text {
   font-weight: 600;
 }
 
-#send-note .form textarea:focus .btn-back {
-  visibility: visible;
-}
-
 #send-note .buttons {
   margin: 40px 0;
   margin-left: 118px;
@@ -2981,7 +2977,6 @@ nav.menu-bar .nav-list .nav-item .nav-text {
 }
 
 #send-note .buttons .btn.btn-back {
-  visibility: hidden;
   width: 160px;
   border: 1px solid #0286cd;
   background: #fff;

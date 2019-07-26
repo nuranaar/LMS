@@ -268,20 +268,13 @@ nav {
   }
 }
 #send-note {
-  .form{
-    textarea:focus{
-      .btn-back{
-        visibility: visible;
-      }
-    }
-  }
+  
   .buttons {
     margin: 40px 0;
     margin-left: 118px;
     .btn {
       width: 200px;
       &.btn-back {
-        visibility: hidden;
         width: 160px;
         border: 1px solid $main_color;
         background: #fff;

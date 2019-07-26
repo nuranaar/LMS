@@ -267,10 +267,18 @@ $(document).ready(() => {
         $($(e.currentTarget).data("target")).css("display", "flex");
         $("#confirm").css("display", "none");
     });
-    $("#send-note .btn-confirm").click(function(e){
+    $("#send-note .btn-confirm").click(function (e) {
         e.preventDefault();
         $($(e.currentTarget).data("target")).css("display", "flex");
         $("#send-note").css("display", "none");
-    })
+    });
+    $("#profile .btn-edit").click(function () {
+        $("#profile ").css("display", "none");
+        $($(this).attr("href")).css("display", "block");
+    });
+    $("#thanks-popup .btn-close").click(function () {
+        $("#profile-edit").css("display", "none");
+        $("#profile ").css("display", "block");
+    });
 });
 
