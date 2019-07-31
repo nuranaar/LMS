@@ -32,12 +32,14 @@
       font-weight: 800;
       line-height: 1.25;
       margin-bottom: 40px;
+      color: #fff ;
       width: 100%;
     }
     .info {
       font-size: 18px;
       font-weight: 600;
       line-height: 1.78;
+      color: #fff ;
       width: 550px;
     }
   }
@@ -55,7 +57,7 @@
       box-shadow: 0 0 8px 0 #99a9be30;
       &:hover {
         box-shadow: 0 0 8px 0 #0286cd30;
-        .card-desc .title {
+        .card-desc .title a{
           color: $main-color;
         }
       }

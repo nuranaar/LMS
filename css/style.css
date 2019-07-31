@@ -446,8 +446,9 @@ video {
   background-color: #0286cd;
   line-height: 60px;
   font-size: 20px;
-  padding-left: 20px;
+  padding-left: 30px;
   font-weight: bold;
+  text-align: left;
 }
 
 #add-label .popup .popup-header p,
@@ -2100,6 +2101,14 @@ main .weekly-pagination .btn-this-week:hover {
   border-radius: 5px;
   background-color: #0286cd;
   color: #fff;
+  position: relative;
+}
+
+.form .btn-form .icon {
+  top: 10px;
+  left: 12px;
+  position: absolute;
+  width: 36px;
 }
 
 #fin-info .popup {
@@ -2196,12 +2205,16 @@ main .weekly-pagination .btn-this-week:hover {
 }
 
 #confirm .popup .popup-body .user-info-list .user-info-item .data {
-  padding-left: 80px;
+  padding-left: 30px;
   color: #b3b8c1;
 }
 
+#confirm .popup .popup-body .user-info-list .user-info-item .value {
+  padding-left: 90px;
+}
+
 #confirm .popup .popup-body .buttons .btn {
-  width: 200px;
+  width: 245px;
   margin: 40px 5px;
 }
 
@@ -2218,7 +2231,7 @@ main .weekly-pagination .btn-this-week:hover {
 }
 
 #confirm .popup .popup-body .confirm-note {
-  padding: 0 90px 40px 90px;
+  padding: 0 30px 40px 30px;
 }
 
 #confirm .popup .popup-body .confirm-note .note-title {
@@ -2240,7 +2253,7 @@ main .weekly-pagination .btn-this-week:hover {
 
 #send-note .popup .popup-body .info {
   color: #b3b8c1;
-  padding: 30px 40px;
+  padding: 30px;
 }
 
 #send-note .popup .popup-body .form {
@@ -2537,6 +2550,7 @@ main .weekly-pagination .btn-this-week:hover {
   font-weight: 800;
   line-height: 1.25;
   margin-bottom: 40px;
+  color: #fff;
   width: 100%;
 }
 
@@ -2544,6 +2558,7 @@ main .weekly-pagination .btn-this-week:hover {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.78;
+  color: #fff;
   width: 550px;
 }
 
@@ -2572,7 +2587,7 @@ main .weekly-pagination .btn-this-week:hover {
           box-shadow: 0 0 8px 0 #0286cd30;
 }
 
-#menu .menu-cards .card:hover .card-desc .title {
+#menu .menu-cards .card:hover .card-desc .title a {
   color: #0286cd;
 }
 

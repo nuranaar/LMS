@@ -66,13 +66,11 @@
         <main class="col-lg-12  w-100">
             <header class="col-lg-12 header">
                 <div class="head-right">
-                    <!-- adminde gorsenmir -->
                     <div class="search">
                         <a href="#">
                             <i class="far fa-question-circle"></i>
                         </a>
                     </div>
-                    <!-- / -->
                     <div class="notification active">
                         <a href="#noti">
                             <i class="far fa-bell"></i>
@@ -118,7 +116,7 @@
                     </div>
                 </div>
             </header>
-            <div class="page-body">
+            <div class="page-body" id="student-profile">
                 <div class="col-lg-12">
                     <div class="body" id="profile">
                         <div class="body-head d-flex justify-content-between">
@@ -159,10 +157,7 @@
                                         <p class="label">Telefon nömrəsi</p>
                                         <p class="input">051-760-31-81</p>
                                     </div>
-                                    <div class="form-group">
-                                        <p class="label">Proqram</p>
-                                        <p class="input">Qrafik və Veb dizayn</p>
-                                    </div>
+
                                     <div class="form-group">
                                         <p class="label">Yaşadığı ünvan</p>
                                         <p class="input">Bakı şəh., Nərimanov ray., Heydər Əliyev pr. 76, mən. 19</p>
@@ -249,45 +244,356 @@
                     </div>
                 </div>
             </div>
-        </main>
-
-        <!-- popuups -->
-        <div class="popups" id="send-note">
-            <div class="popup-area"></div>
-            <div class="popup">
-                <div class="close">
-                    <i class="fas fa-times"></i>
-                </div>
-                <div class="popup-header text-center">
-                    <p>Səbəb</p>
-                </div>
-                <div class="popup-body">
-                    <p class="info">Şəxsi məlumatda etdiyiniz dəyişikliklə bağlı bizə səbəb yazin.</p>
-                    <form class="form">
-                        <label class="label" for="note">Səbəb</label>
-                        <textarea name="note" id="note" cols="30" rows="5" placeholder="Qeydinizi yazın"></textarea>
-                        <div class="buttons">
-                            <button class="btn btn-back">Ləğv et</button>
-                            <button class="btn btn-confirm" data-target="#thanks-popup">Göndər</button>
+            <div class="page-body" id="teacher-profile">
+                <div class="col-lg-12">
+                    <div class="body" id="profile">
+                        <div class="body-head d-flex justify-content-between">
+                            <p class="title">Şəxsi məlumat</p>
+                            <a class="btn btn-edit " href="#profile-edit"><img src="../img/menubar-icons/edit.png"
+                                    alt="">Redaktə
+                                et</a>
                         </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="popups" id="thanks-popup">
-            <div class="popup-area"></div>
-            <div class="popup">
-                <div class="popup-body">
-                    <div class="image text-center">
-                        <img src="../img/loginimg/thanks image.jpg" alt="">
+                        <div class="datas mt-6 pb-6">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="photo">
+                                        <img class="user-photo" src="../img/users/user.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <p class="label">Ad</p>
+                                        <p class="input">Gülsüm</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Soyad</p>
+                                        <p class="input">Məmmədova</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Email</p>
+                                        <p class="input">gulsumfm@code.edu.az</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Proqram</p>
+                                        <p class="input">Qrafik və Veb dizayn</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Telefon nömrəsi</p>
+                                        <p class="input">051-760-31-81</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="info">Etdiyiniz dəyişikliklə bağlı qısa zamanda sizə məlumat gələcək.</p>
-                    <button class="btn btn-close">Bağla</button>
+                    <div class="body" id="profile-edit" style="display: none">
+                        <div class="body-head d-flex justify-content-between">
+                            <p class="title">Şəxsi məlumat</p>
+
+                        </div>
+                        <form class="datas mt-6 pb-6">
+                            <div class="row">
+                                <div class="col-lg-3 text-center">
+                                    <label for="photo">
+                                        <div class="photo">
+                                            <img class="user-photo" src="../img/users/user.jpg" alt="">
+                                            <img class="change-label" src="../img/menubar-icons/change photo.png"
+                                                alt="">
+                                        </div>
+                                    </label>
+                                    <input type="file" id="photo" style="display: none">
+                                    <a class="btn btn-del-photo" href="#">Profil şəklini sil</a>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <label class="label">Ad</label>
+                                        <input class="input input-error" value="Gülsüm">
+                                        <p class="error-message">
+                                            Adinizi daxil edin.
+                                        </p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Soyad</label>
+                                        <input class="input" value="Məmmədova">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Email</label>
+                                        <input class="input" disabled value="gulsumfm@code.edu.az">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                            <label class="label">Proqram</label>
+                                            <input class="input" disabled value="Qrafik və Veb dizayn">
+                                        </div>
+                                    <div class="form-group">
+                                        <label class="label">Telefon nömrəsi</label>
+                                        <div class="input phone-input">
+                                            <select name="operator">
+                                                <option value="050">050</option>
+                                                <option value="051">051</option>
+                                                <option value="055">055</option>
+                                                <option value="070">070</option>
+                                                <option value="077">077</option>
+                                                <option value="012">012</option>
+                                            </select>
+                                            <input value="760-31-81">
+                                        </div>
+                                    </div>
+                                    <div class="form-btn">
+                                            <button class="btn btn-cancel">Ləğv et</button>
+                                            <button class="btn btn-send send-note" data-target="#send-note">Dəyişikliyi
+                                                göndər</button>
+                                            <!-- menegerde ve aminde btn texti "yadda saxla", "send-note" popupi acilmadan, "thanks-popup" acilacaq-->
+    
+                                        </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="page-body" id="admin-profile">
+                <div class="col-lg-12">
+                    <div class="body" id="profile">
+                        <div class="body-head d-flex justify-content-between">
+                            <p class="title">Şəxsi məlumat</p>
+                            <a class="btn btn-edit " href="#profile-edit"><img src="../img/menubar-icons/edit.png"
+                                    alt="">Redaktə
+                                et</a>
+                        </div>
+                        <div class="datas mt-6 pb-6">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="photo">
+                                        <img class="user-photo" src="../img/users/user.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <p class="label">Ad</p>
+                                        <p class="input">Gülsüm</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Soyad</p>
+                                        <p class="input">Məmmədova</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Email</p>
+                                        <p class="input">gulsumfm@code.edu.az</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Telefon nömrəsi</p>
+                                        <p class="input">051-760-31-81</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body" id="profile-edit" style="display: none">
+                        <div class="body-head d-flex justify-content-between">
+                            <p class="title">Şəxsi məlumat</p>
 
+                        </div>
+                        <form class="datas mt-6 pb-6">
+                            <div class="row">
+                                <div class="col-lg-3 text-center">
+                                    <label for="photo">
+                                        <div class="photo">
+                                            <img class="user-photo" src="../img/users/user.jpg" alt="">
+                                            <img class="change-label" src="../img/menubar-icons/change photo.png"
+                                                alt="">
+                                        </div>
+                                    </label>
+                                    <input type="file" id="photo" style="display: none">
+                                    <a class="btn btn-del-photo" href="#">Profil şəklini sil</a>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <label class="label">Ad</label>
+                                        <input class="input input-error" value="Gülsüm">
+                                        <p class="error-message">
+                                            Adinizi daxil edin.
+                                        </p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Soyad</label>
+                                        <input class="input" value="Məmmədova">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Email</label>
+                                        <input class="input" disabled value="gulsumfm@code.edu.az">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Telefon nömrəsi</label>
+                                        <div class="input phone-input">
+                                            <select name="operator">
+                                                <option value="050">050</option>
+                                                <option value="051">051</option>
+                                                <option value="055">055</option>
+                                                <option value="070">070</option>
+                                                <option value="077">077</option>
+                                                <option value="012">012</option>
+                                            </select>
+                                            <input value="760-31-81">
+                                        </div>
+                                    </div>
+                                    <div class="form-btn">
+                                        <button class="btn btn-cancel">Ləğv et</button>
+                                        <button class="btn btn-send send-note" data-target="#send-note">Dəyişikliyi
+                                            göndər</button>
+                                        <!-- menegerde ve aminde btn texti "yadda saxla", "send-note" popupi acilmadan, "thanks-popup" acilacaq-->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="page-body" id="manager-profile">
+                <div class="col-lg-12">
+                    <div class="body" id="profile">
+                        <div class="body-head d-flex justify-content-between">
+                            <p class="title">Şəxsi məlumat</p>
+                            <a class="btn btn-edit " href="#profile-edit"><img src="../img/menubar-icons/edit.png"
+                                    alt="">Redaktə
+                                et</a>
+                        </div>
+                        <div class="datas mt-6 pb-6">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="photo">
+                                        <img class="user-photo" src="../img/users/user.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <p class="label">Ad</p>
+                                        <p class="input">Gülsüm</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Soyad</p>
+                                        <p class="input">Məmmədova</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Vəzifə</p>
+                                        <p class="input">Tələbələrlə iş</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Email</p>
+                                        <p class="input">gulsumfm@code.edu.az</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="label">Telefon nömrəsi</p>
+                                        <p class="input">051-760-31-81</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body" id="profile-edit" style="display: none">
+                        <div class="body-head d-flex justify-content-between">
+                            <p class="title">Şəxsi məlumat</p>
+
+                        </div>
+                        <form class="datas mt-6 pb-6">
+                            <div class="row">
+                                <div class="col-lg-3 text-center">
+                                    <label for="photo">
+                                        <div class="photo">
+                                            <img class="user-photo" src="../img/users/user.jpg" alt="">
+                                            <img class="change-label" src="../img/menubar-icons/change photo.png"
+                                                alt="">
+                                        </div>
+                                    </label>
+                                    <input type="file" id="photo" style="display: none">
+                                    <a class="btn btn-del-photo" href="#">Profil şəklini sil</a>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <label class="label">Ad</label>
+                                        <input class="input input-error" value="Gülsüm">
+                                        <p class="error-message">
+                                            Adinizi daxil edin.
+                                        </p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Soyad</label>
+                                        <input class="input" value="Məmmədova">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Vəzifə</label>
+                                        <input class="input" value="Tələbələrlə iş">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Email</label>
+                                        <input class="input" disabled value="gulsumfm@code.edu.az">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label">Telefon nömrəsi</label>
+                                        <div class="input phone-input">
+                                            <select name="operator">
+                                                <option value="050">050</option>
+                                                <option value="051">051</option>
+                                                <option value="055">055</option>
+                                                <option value="070">070</option>
+                                                <option value="077">077</option>
+                                                <option value="012">012</option>
+                                            </select>
+                                            <input value="760-31-81">
+                                        </div>
+                                    </div>
+                                    <div class="form-btn">
+                                        <button class="btn btn-cancel">Ləğv et</button>
+                                        <button class="btn btn-send send-note" data-target="#send-note">Dəyişikliyi
+                                            göndər</button>
+                                        <!-- menegerde ve aminde btn texti "yadda saxla", "send-note" popupi acilmadan, "thanks-popup" acilacaq-->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
+
+    <!-- popuups -->
+    <div class="popups" id="send-note">
+        <div class="popup-area"></div>
+        <div class="popup">
+            <div class="close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="popup-header text-center">
+                <p>Səbəb</p>
+            </div>
+            <div class="popup-body">
+                <p class="info">Şəxsi məlumatda etdiyiniz dəyişikliklə bağlı bizə səbəb yazin.</p>
+                <form class="form">
+                    <label class="label" for="note">Səbəb</label>
+                    <textarea name="note" id="note" cols="30" rows="5" placeholder="Qeydinizi yazın"></textarea>
+                    <div class="buttons">
+                        <button class="btn btn-back">Ləğv et</button>
+                        <button class="btn btn-confirm" data-target="#thanks-popup">Göndər</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="popups" id="thanks-popup">
+        <div class="popup-area"></div>
+        <div class="popup">
+            <div class="popup-body">
+                <div class="image text-center">
+                    <img src="../img/loginimg/thanks image.jpg" alt="">
+                </div>
+                <p class="info">Etdiyiniz dəyişikliklə bağlı qısa zamanda sizə məlumat gələcək.</p>
+                <button class="btn btn-close">Bağla</button>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>

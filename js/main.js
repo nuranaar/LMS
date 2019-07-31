@@ -272,9 +272,11 @@ $(document).ready(() => {
         $($(e.currentTarget).data("target")).css("display", "flex");
         $("#send-note").css("display", "none");
     });
-    $("#profile .btn-edit").click(function () {
-        $("#profile ").css("display", "none");
-        $($(this).attr("href")).css("display", "block");
+    $("#profile .btn-edit").click(function (e) {
+        e.preventDefault();
+        var profile=$(this).parents(".page-body").attr("id");
+        $(`#${profile} #profile`).css("display", "none");
+        $(`#${profile}`).find($(this).attr("href")).css("display", "block");
     });
     $("#thanks-popup .btn-close").click(function () {
         $("#profile-edit").css("display", "none");

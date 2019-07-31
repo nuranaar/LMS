@@ -104,6 +104,13 @@
     border-radius: 5px;
     background-color: $main_color;
     color: #fff;
+    position: relative;
+    .icon{
+      top: 10px;
+      left: 12px;
+      position: absolute;
+      width: 36px;
+    }
   }
   
 }
@@ -180,14 +187,17 @@
             font-weight: 600;
           }
           .data {
-            padding-left: 80px;
+            padding-left: 30px;
             color: $popup_info;
           }
+.value{
+  padding-left: 90px;
+}
         }
       }
       .buttons {
         .btn {
-          width: 200px;
+          width: 245px;
           margin: 40px 5px;
           &.btn-back {
             color: $main_color;
@@ -202,7 +212,7 @@
         }
       }
       .confirm-note {
-        padding: 0 90px 40px 90px;
+        padding: 0 30px 40px 30px;
 
         .note-title {
           font-weight: 800;
@@ -224,7 +234,7 @@
     .popup-body {
       .info {
         color: $popup_info;
-        padding: 30px 40px;
+        padding: 30px;
       }
       .form {
         width: 85%;
