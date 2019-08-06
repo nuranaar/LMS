@@ -117,6 +117,10 @@ hr {
   border-radius: 100%;
 }
 
+span, div {
+  color: #3a3a3a;
+}
+
 html,
 body,
 div,
@@ -2440,8 +2444,7 @@ main .weekly-pagination .btn-this-week:hover {
 }
 
 #segmentations .segments .segment {
-  width: 200px;
-  height: 230px;
+  padding-bottom: 30px;
   border-radius: 4px;
   -webkit-box-shadow: 0 0 10px 0 #99a9be37;
           box-shadow: 0 0 10px 0 #99a9be37;
@@ -2452,34 +2455,27 @@ main .weekly-pagination .btn-this-week:hover {
 }
 
 #segmentations .segments .segment .icon {
-  width: 90px;
+  width: 48%;
   height: 90px;
-  margin: 50px 55px;
+  margin: 50px auto;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#segmentations .segments .segment .icon.teacher {
-  background-image: url("../img/loginimg/teacher.png");
+#segmentations .segments .segment .icon img {
+  width: 100%;
 }
 
-#segmentations .segments .segment .icon.student {
-  background-image: url("../img/loginimg/student.png");
-}
-
-#segmentations .segments .segment .icon.handshake {
-  background-image: url("../img/loginimg/handshake.png");
-}
-
-#segmentations .segments .segment .icon.key {
-  width: 80px;
-  background-image: url("../img/loginimg/key.png");
+#segmentations .segments .segment .icon.key img {
+  width: 80%;
 }
 
 #segmentations .segments .segment .segment-title {
   font-size: 18px;
   font-weight: 800;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   color: #3a3a3a;
 }
 
@@ -2489,20 +2485,8 @@ main .weekly-pagination .btn-this-week:hover {
           box-shadow: 0 0 10px 0 #0286cd37;
 }
 
-#segmentations .segments .segment:hover .teacher {
-  background-image: url("../img/loginimg/teacher blue.png");
-}
-
-#segmentations .segments .segment:hover .student {
-  background-image: url("../img/loginimg/student blue.png");
-}
-
-#segmentations .segments .segment:hover .handshake {
-  background-image: url("../img/loginimg/handshake blue.png");
-}
-
-#segmentations .segments .segment:hover .key {
-  background-image: url("../img/loginimg/key blue.png");
+#segmentations .segments .segment:hover .segment-title {
+  color: #0286cd;
 }
 
 .header-gradient {
@@ -2659,7 +2643,7 @@ nav.menu-bar {
   background-color: #fff;
   z-index: 2;
   position: absolute;
-  top: 18px;
+  top: 17px;
   left: 0;
   height: calc(100vh - 18px);
   width: 80px;
@@ -2672,7 +2656,7 @@ nav.menu-bar {
 
 nav.menu-bar.active {
   position: relative;
-  top: 0;
+  top: -1px;
   width: 306px;
 }
 
@@ -3032,5 +3016,359 @@ nav.menu-bar .nav-list .nav-item .nav-text {
   font-weight: bold;
   color: #fff;
   width: 200px;
+}
+
+.page-body #segmentations .segments .segment .icon {
+  margin: 18px auto;
+  width: 30%;
+  height: 70px;
+}
+
+.page-body #statistics {
+  padding: 0 16px;
+}
+
+.page-body #statistics .group-pagination {
+  padding: 30px 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-body #statistics .group-pagination .prev,
+.page-body #statistics .group-pagination .next {
+  width: 8px;
+}
+
+.page-body #statistics .group-pagination .prev .icon,
+.page-body #statistics .group-pagination .next .icon {
+  width: 100%;
+}
+
+.page-body #statistics .group-pagination .prev.disabled,
+.page-body #statistics .group-pagination .next.disabled {
+  opacity: 0.5;
+}
+
+.page-body #statistics .group-pagination .group {
+  font-size: 24px;
+  font-weight: 900;
+  padding: 0 16px;
+}
+
+.page-body #statistics .statistics-list .statistic-item {
+  padding: 25px 20px 20px;
+  padding-right: 7px;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+  margin: 15px;
+  -webkit-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+.page-body #statistics .statistics-list .statistic-item .title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #656565;
+}
+
+.page-body #statistics .statistics-list .statistic-item .info {
+  font-size: 18px;
+  font-weight: 800;
+  padding: 5px 0;
+}
+
+.page-body #statistics .statistics-list .statistic-item .chart {
+  width: 110px;
+  height: 110px;
+}
+
+.page-body #statistics .statistics-list .statistic-item .main-info {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 35px;
+}
+
+.page-body #statistics .statistics-list .statistic-item .chart-info {
+  font-size: 13px;
+  font-weight: 500;
+  color: #a0a0a0;
+  position: relative;
+  bottom: 10px;
+}
+
+.page-body #statistics .statistics-list .statistic-item.statistic-status .status-list .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 9px;
+}
+
+.page-body #statistics .statistics-list .statistic-item.statistic-status .status-list .status .sum {
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.page-body #statistics .statistics-list .statistic-item.statistic-status .status-list .status .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-body #statistics .statistics-list .statistic-item.statistic-status .status-list .status .title .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  margin-right: 9px;
+}
+
+.page-body #statistics .notepad {
+  margin: 15px;
+}
+
+.page-body #statistics .notepad textarea {
+  width: 100%;
+  border: none;
+  min-height: 200px;
+  resize: vertical;
+  border-radius: 6px;
+  background-color: #fff4a0;
+  padding: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page-body #statistics .notepad textarea::-webkit-input-placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #1a1a1a;
+}
+
+.page-body #statistics .notepad textarea:-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #1a1a1a;
+}
+
+.page-body #statistics .notepad textarea::-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #1a1a1a;
+}
+
+.page-body #statistics .notepad textarea::placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #1a1a1a;
+}
+
+.page-body #statistics .blogs {
+  -webkit-box-shadow: 0 0 10px 0 #99a9be37;
+          box-shadow: 0 0 10px 0 #99a9be37;
+  margin: 15px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.page-body #statistics .blogs .blogs-header {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 24px;
+}
+
+.page-body #statistics .blogs .blogs-header .head-title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.page-body #statistics .blogs .blogs-header .btn {
+  font-size: 12px;
+  font-weight: 500;
+  color: #656565;
+  padding: 0;
+  background-color: #fff;
+}
+
+.page-body #statistics .blogs .blog-list {
+  padding: 10px 24px;
+  max-height: 277px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.page-body #statistics .blogs .blog-list::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.page-body #statistics .blogs .blog-list::-webkit-scrollbar {
+  width: 3px;
+}
+
+.page-body #statistics .blogs .blog-list::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #f2f2f2;
+}
+
+.page-body #statistics .blogs .blog-list .blog-item {
+  margin-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #fafafa;
+}
+
+.page-body #statistics .blogs .blog-list .blog-item .blog-date {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.page-body #statistics .blogs .blog-list .blog-item .blog-date .month {
+  background-color: #e9584f;
+  color: #fff;
+  padding: 2px 11px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.page-body #statistics .blogs .blog-list .blog-item .blog-date .day {
+  background-color: #fafafa;
+  padding: 6px 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.page-body #statistics .blogs .blog-list .blog-item .blog {
+  width: 70%;
+  padding: 0px 12px;
+}
+
+.page-body #statistics .blogs .blog-list .blog-item .blog .title {
+  font-size: 16px;
+  color: #656565;
+  font-weight: 800;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.page-body #statistics .blogs .blog-list .blog-item .blog .info {
+  padding-top: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #a0a0a0;
+}
+
+.page-body #statistics .blogs .blog-list .blog-item .blog .info span {
+  color: #a0a0a0;
+}
+
+.page-body #statistics .blogs .blog-list .hidden {
+  position: absolute;
+  pointer-events: none;
+  bottom: 0;
+  left: 0;
+  width: 98%;
+  height: 120px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.36)), to(rgba(255, 255, 255, 0.91)));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0.91));
+}
+
+.statistic-card {
+  min-height: 123px;
+  max-height: 123px;
+  overflow: hidden;
+}
+
+.statistic-card.groups-date {
+  min-height: 190px;
+}
+
+.statistic-card .card-head {
+  position: relative;
+}
+
+.statistic-card .card-head .card-title {
+  font-size: 18px;
+  font-weight: 800;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.statistic-card .card-head .card-title::after {
+  position: absolute;
+  content: "";
+  width: 114%;
+  height: 2px;
+  left: -24px;
+  bottom: 0;
+  background-color: #f2f2f2;
+}
+
+.statistic-card .card-head .calendar {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  width: 15px;
+}
+
+.statistic-card .card-head .calendar img {
+  width: 100%;
+}
+
+.statistic-card .card-body {
+  padding-top: 15px;
+  height: 60px;
+}
+
+.statistic-card .card-body .card-info {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.57;
+  color: #a0a0a0;
+}
+
+.statistic-card .card-body .card-list .card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.statistic-card .card-body .card-list .card-item .date {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.57;
+  color: #a0a0a0;
+  padding-right: 22px;
+}
+
+#manager-study.page-body #statistics .statistics-list .statistic-item .chart-info {
+  bottom: 15px;
+}
+
+#manager-study.page-body #statistics .statistics-list .statistic-item.statistic-status .status-list .status {
+  padding-bottom: 15px;
 }
 /*# sourceMappingURL=style.css.map */

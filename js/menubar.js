@@ -8,13 +8,15 @@ $(document).ready(function () {
     });
     $(".open-menubar").click(function () {
         if (!$(this).parents(".menu-bar").hasClass("active")) {
-            $(this).parents(".menu-bar").addClass("active");
+                $(this).parents(".menu-bar").addClass("active");
             $(".page-body").css("padding-left", "0px");
+            $('.page-body .statistic-item').css('margin', '10px');
             $(this).css("opacity", "1");
 
     } else {
-            $(this).parents(".menu-bar").removeClass("active");
-            $(".page-body").css("padding-left", "80px");
+        $(this).parents(".menu-bar").removeClass("active");
+        $(".page-body").css("padding-left", "80px");
+            $('.page-body .statistic-item').css('margin', '15px');
             $(this).css("opacity", "0.6");
 
         }

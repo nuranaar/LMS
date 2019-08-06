@@ -97,7 +97,9 @@ hr {
       border-radius: 100%;
     }
   }
-
+  span, div {
+    color: $text_color;
+  }
 html,
 body,
 div,

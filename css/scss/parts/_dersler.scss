@@ -1,0 +1,277 @@
+.page-body {
+  #segmentations {
+    .segments {
+      .segment {
+        .icon {
+          margin: 18px auto;
+          width: 30%;
+          height: 70px;
+        }
+      }
+    }
+  }
+  #statistics {
+    padding: 0 16px;
+    .group-pagination {
+      padding: 30px 20px 0;
+      display: flex;
+      align-items: center;
+      .prev,
+      .next {
+        width: 8px;
+        .icon {
+          width: 100%;
+        }
+        &.disabled {
+          opacity: 0.5;
+        }
+      }
+      .group {
+        font-size: 24px;
+        font-weight: 900;
+        padding: 0 16px;
+      }
+    }
+    .statistics-list {
+      .statistic-item {
+        padding: 25px 20px 20px;
+        padding-right: 7px;
+        border-radius: 6px;
+        background-color: $bg-color;
+        margin: 15px;
+        transition: margin 0.2s;
+        .title {
+          font-size: 14px;
+          font-weight: 600;
+          color: $title;
+        }
+        .info {
+          font-size: 18px;
+          font-weight: 800;
+          padding: 5px 0;
+        }
+        .chart {
+          width: 110px;
+          height: 110px;
+        }
+        .main-info {
+          font-size: 30px;
+          font-weight: bold;
+          margin-left: 35px;
+        }
+        .chart-info {
+          font-size: 13px;
+          font-weight: 500;
+          color: $undefined;
+          position: relative;
+          bottom: 10px;
+        }
+        &.statistic-status {
+          .status-list {
+            .status {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding-bottom: 9px;
+              .sum {
+                margin-right: 15px;
+                font-size: 16px;
+                font-weight: 800;
+              }
+              .title {
+                display: flex;
+                align-items: center;
+                .dot {
+                  width: 4px;
+                  height: 4px;
+                  border-radius: 100%;
+                  margin-right: 9px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .notepad {
+      margin: 15px;
+      textarea {
+        width: 100%;
+        border: none;
+        min-height: 200px;
+        resize: vertical;
+        border-radius: 6px;
+        background-color: #fff4a0;
+        padding: 24px;
+        box-sizing: border-box;
+        &::placeholder {
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 1.33;
+          color: #1a1a1a;
+        }
+      }
+    }
+    .blogs {
+      box-shadow: $shadow;
+      margin: 15px;
+      border-radius: 6px;
+      position: relative;
+      .blogs-header {
+        border-bottom: 1px solid #f2f2f2;
+        padding: 24px;
+        .head-title {
+          font-size: 20px;
+          font-weight: 900;
+        }
+        .btn {
+          font-size: 12px;
+          font-weight: 500;
+          color: $title;
+          padding: 0;
+          background-color: #fff;
+        }
+      }
+      .blog-list {
+        padding: 10px 24px;
+        max-height: 277px;
+        overflow: hidden;
+        overflow-y: auto;
+        &::-webkit-scrollbar-track {
+          border-radius: 10px;
+          background-color: #fff;
+        }
+
+        &::-webkit-scrollbar {
+          width: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 2px;
+          background-color: #f2f2f2;
+        }
+        .blog-item {
+          margin-top: 16px;
+          padding-bottom: 16px;
+          border-bottom: 1px solid #fafafa;
+          .blog-date {
+            border-radius: 6px;
+            overflow: hidden;
+            .month {
+              background-color: #e9584f;
+              color: #fff;
+              padding: 2px 11px;
+              font-size: 10px;
+              font-weight: bold;
+            }
+            .day {
+              background-color: #fafafa;
+              padding: 6px 12px;
+              font-size: 18px;
+              font-weight: bold;
+            }
+          }
+          .blog {
+            width: 70%;
+            padding: 0px 12px;
+            .title {
+              font-size: 16px;
+              color: $title;
+              font-weight: 800;
+              width: 100%;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+            .info {
+              padding-top: 5px;
+              font-size: 10px;
+              font-weight: 600;
+              color: $undefined;
+              span {
+                color: $undefined;
+              }
+            }
+          }
+        }
+      
+      .hidden {
+        position: absolute;
+        pointer-events: none;
+        bottom: 0;
+        left: 0;
+        width: 98%;
+        height: 120px;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0.91));
+      }
+    }}
+  }
+}
+.statistic-card {
+  min-height: 123px;
+  max-height: 123px;
+  overflow: hidden;
+  &.groups-date {
+    min-height: 190px;
+  }
+  .card-head {
+    position: relative;
+    .card-title {
+      font-size: 18px;
+      font-weight: 800;
+      padding-bottom: 20px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 114%;
+        height: 2px;
+        left: -24px;
+        bottom: 0;
+        background-color: #f2f2f2;
+      }
+    }
+    .calendar {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      width: 15px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .card-body {
+    padding-top: 15px;
+    height: 60px;
+    .card-info {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.57;
+      color: $undefined;
+    }
+    .card-list {
+      .card-item {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 8px;
+        align-items: center;
+        .date {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 1.57;
+          color: $undefined;
+          padding-right: 22px;
+        }
+      }
+    }
+  }
+}
+#manager-study {
+  &.page-body #statistics .statistics-list .statistic-item .chart-info {
+    bottom: 15px;
+  }
+  &.page-body #statistics .statistics-list .statistic-item.statistic-status .status-list .status {
+    padding-bottom: 15px;
+  }
+}

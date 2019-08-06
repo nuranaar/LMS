@@ -11,55 +11,40 @@
   .segments {
     flex-wrap: nowrap;
     .segment {
-      width: 200px;
-      height: 230px;
+      padding-bottom: 30px;
       border-radius: 4px;
       box-shadow: $shadow;
       border: 2px solid #fff;
       margin: 15px;
       transition: all 0.3s;
+      
       .icon {
-        width: 90px;
+        width: 48%;
         height: 90px;
-        margin: 50px 55px;
+        margin: 50px auto;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-
-        &.teacher {
-          background-image: url("../img/loginimg/teacher.png");
-        }
-        &.student {
-          background-image: url("../img/loginimg/student.png");
-        }
-        &.handshake {
-          background-image: url("../img/loginimg/handshake.png");
+        img {
+          width: 100%;
         }
         &.key {
-          width: 80px;
-          background-image: url("../img/loginimg/key.png");
+          img {
+            width: 80%;
+          }
         }
       }
       .segment-title {
         font-size: 18px;
         font-weight: 800;
+        transition: all 0.3s;
         color: $login_color;
       }
       &:hover {
         border: 2px solid $main_color;
         box-shadow: $main_shadow;
-
-        .teacher {
-          background-image: url("../img/loginimg/teacher blue.png");
-        }
-        .student {
-          background-image: url("../img/loginimg/student blue.png");
-        }
-        .handshake {
-          background-image: url("../img/loginimg/handshake blue.png");
-        }
-        .key {
-          background-image: url("../img/loginimg/key blue.png");
+        .segment-title {
+          color: $main_color;
         }
       }
     }
