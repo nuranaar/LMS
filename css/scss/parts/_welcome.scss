@@ -4,73 +4,47 @@
   position: relative;
   top: -2px;
 }
-#welcome {
-  height: 600px;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-  }
-  .welcome-text {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: #fff;
-    height: 100%;
-    background-image: linear-gradient(to right, #00000080, rgba(0, 0, 0, 0));
-    .title {
-      font-size: 40px;
-      font-weight: 800;
-      line-height: 1.25;
-      margin-bottom: 40px;
-      color: #fff ;
-      width: 100%;
-    }
-    .info {
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 1.78;
-      color: #fff ;
-      width: 550px;
-    }
-  }
+.header {
+  box-shadow: none !important ;
+  border-bottom: 2px solid #ededed;
 }
 #menu {
-  min-height: 660px;
   background-color: #fff;
   .menu-cards {
-    margin: 88px auto;
     align-self: center;
+    margin: 65px auto;
     .card {
       border-radius: 6px;
       margin: 15px;
       height: 170px;
       box-shadow: 0 0 8px 0 #99a9be30;
+      transition: all .2s;
       &:hover {
-        box-shadow: 0 0 8px 0 #0286cd30;
-        .card-desc .title a{
+    margin-top: 8px;
+        .icon .mdi {
           color: $main-color;
         }
       }
       .icon {
-        min-width: 50px;
-        max-width: 50px;
-        padding: 50px 30px;
-        img {
-          width: 100%;
+        .mdi {
+      transition: all .2s;
+          color: $text-color;
+          font-size: 48px;
+          &::before {
+            padding: 50px 30px 0 ;
+            line-height: 48px;
+          }
+          &.mdi-cash-multiple::before{
+            padding: 43px 30px 0 ;
+          }
+          &.mdi-account::before{
+            padding: 44px 30px 0 ;
+          }
         }
       }
       .card-desc {
-        padding: 10px;
+        margin-top: 45px;
+        padding-right: 15px;
         .title {
           font-size: 18px;
           font-weight: bold;
@@ -90,13 +64,13 @@
 footer {
   background-color: $bg_color;
   .copywriter {
-    font-size: 13px;
+    font-size: 11px;
     font-weight: bold;
     color: $text-color;
   }
   .logo {
     img {
-      width: 50%;
+      width: 40%;
     }
   }
   .link-list {
@@ -104,9 +78,23 @@ footer {
     justify-content: flex-end;
     align-items: center;
     .link-item {
+      &:nth-child(2) {
+        a {
+          img {
+            height: 92%;
+          }
+        }
+      }
+      &:nth-child(3) {
+        a {
+          img {
+            height: 110%;
+          }
+        }
+      }
       width: 18px;
       height: 18px;
-      padding-left: 75px;
+      padding-left: 70px;
       img {
         height: 100%;
       }

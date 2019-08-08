@@ -109,16 +109,13 @@ nav {
 }
 
 .header {
-  position: sticky;
   box-shadow: 6px 0 10px 0 #99a9be37;
   background-color: #fff;
   max-height: 80px;
+  z-index: 5;
   .head-right {
     .user-photo {
       padding: 18px;
-      #logout {
-        top: 82px;
-      }
     }
   }
 }

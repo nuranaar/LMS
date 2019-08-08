@@ -274,13 +274,19 @@ $(document).ready(() => {
     });
     $("#profile .btn-edit").click(function (e) {
         e.preventDefault();
-        var profile=$(this).parents(".page-body").attr("id");
+        var profile = $(this).parents(".page-body").attr("id");
         $(`#${profile} #profile`).css("display", "none");
         $(`#${profile}`).find($(this).attr("href")).css("display", "block");
     });
     $("#thanks-popup .btn-close").click(function () {
         $("#profile-edit").css("display", "none");
         $("#profile ").css("display", "block");
+    });
+    $(".user-photo").click(function () {
+        $("#logout").css("display", "block");
+    });
+    $(document).on("click",".overlay",function () {
+        $(this).parent().css("display", "none");
     });
 });
 

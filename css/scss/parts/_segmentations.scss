@@ -11,42 +11,49 @@
   .segments {
     flex-wrap: nowrap;
     .segment {
-      padding-bottom: 30px;
+      width: 200px;
+      height: 230px;
+      box-sizing: border-box;
       border-radius: 4px;
       box-shadow: $shadow;
       border: 2px solid #fff;
       margin: 15px;
-      transition: all 0.3s;
+      padding: 57px 0;
+      transition: all 0.2s;
       
       .icon {
-        width: 48%;
-        height: 90px;
-        margin: 50px auto;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        img {
-          width: 100%;
+        .mdi{
+          transition: all 0.3s;
+          margin: auto;
+          font-size: 60px;
         }
-        &.key {
-          img {
-            width: 80%;
-          }
+        &.teacher-icon .mdi{
+color: #00a659;
+        }
+        &.student-icon .mdi{
+color: #ffc906;
+        }
+        &.manager-icon .mdi{
+color: #f0812b;
+        }
+        &.admin-icon .mdi{
+color: #873996;
         }
       }
       .segment-title {
         font-size: 18px;
         font-weight: 800;
-        transition: all 0.3s;
+        transition: all 0.2s;
+        margin-top: 35px;
         color: $login_color;
       }
-      &:hover {
-        border: 2px solid $main_color;
-        box-shadow: $main_shadow;
-        .segment-title {
-          color: $main_color;
+    
+        &:hover {
+          margin-top: 8px;
+         .icon .mdi{
+            color: $main_color;
+          }
         }
-      }
-    }
   }
+}
 }
